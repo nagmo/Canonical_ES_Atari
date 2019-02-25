@@ -176,7 +176,8 @@ class CanonicalESOptimizer(BaseOptimizer):
         # Simple weighted mean of top self.u offsprings
         for i in range(self.u):
             ind = ids[best[i]]
-            step += self.w[i] * self.noise_table[ind:(ind + self.n)]
+            print('ind: ', ind, 'n: ', self.n, 'table: ', self.noise_table)
+            step += self.w[i] * self.noise_table[ind:ind + self.n]
 
         self.step = self.lr * self.sigma * step
         self.parameters += self.step
