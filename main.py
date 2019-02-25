@@ -42,10 +42,12 @@ def main(configuration_file, run_name):
     cpus = comm.Get_size()
 
     # One cpu (rank 0) will evaluate results
-    train_cpus = cpus - 1
+    import os
+    train_cpus = os.cpu_count() - 1
 
     # Deduce population size
     lam = train_cpus * ep_per_cpu
+    print('t_cpu:', train_cpus, 'ep_cpu: ', ep_per_cpu)
 
     # Create environment
     env = gym.make(env_name)
