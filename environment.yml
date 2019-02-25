@@ -2,10 +2,10 @@ name: Canonical_ES_Atari
 channels:
   - defaults
 dependencies:
-  - _tflow_select=2.3.0=mkl
-  - absl-py=0.7.0=py36_0
-  - astor=0.7.1=py36_0
-  - blas=1.0=mkl
+  - _tflow_select
+  - absl-py
+  - astor
+  - blas
   - bzip2=1.0.6=h1de35cc_5
   - c-ares=1.15.0=h1de35cc_1
   - ca-certificates=2019.1.23=0

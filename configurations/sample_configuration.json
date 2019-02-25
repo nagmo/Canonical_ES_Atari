@@ -7,5 +7,7 @@
     "mu": 50
   },
   "network": "Nature",
-  "nonlin_name": "elu"
+  "nonlin_name": "elu",
+  "ep_per_cpu": 2,
+  "game": "Qbert"
 }
