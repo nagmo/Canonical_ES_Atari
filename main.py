@@ -43,7 +43,7 @@ def main(configuration_file, run_name):
 
     # One cpu (rank 0) will evaluate results
     import os
-    train_cpus = os.cpu_count() - 1
+    train_cpus = len(os.sched_getaffinity(0)) - 1
 
     # Deduce population size
     lam = train_cpus * ep_per_cpu
