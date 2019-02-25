@@ -39,11 +39,11 @@ def main(configuration_file, run_name):
     # MPI stuff
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()
-    cpus = comm.Get_size()
+    import os
+    cpus = len(os.sched_getaffinity(0)) # comm.Get_size()
 
     # One cpu (rank 0) will evaluate results
-    import os
-    train_cpus = len(os.sched_getaffinity(0)) - 1
+    train_cpus = cpus - 1
 
     # Deduce population size
     lam = train_cpus * ep_per_cpu
