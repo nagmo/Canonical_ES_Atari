@@ -26,25 +26,28 @@ optimizer_dict = {
 # solution in each iteration.
 # run_name comes useful when the same hyperparameters
 # are evaluated multiple times.
-def main(ep_per_cpu, game, configuration_file, run_name):
+def main(configuration_file, run_name):
     start_time = time.time()
 
     with open(configuration_file, 'r') as f:
         configuration = json.loads(f.read())
 
+    game = configuration['game']
+    ep_per_cpu = configuration['ep_per_cpu']
     env_name = '%sNoFrameskip-v4' % game
 
     # MPI stuff
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()
-    cpus = comm.Get_size()
-    print(cpus)
+    import os
+    cpus = len(os.sched_getaffinity(0)) # comm.Get_size()
 
     # One cpu (rank 0) will evaluate results
     train_cpus = cpus - 1
 
     # Deduce population size
     lam = train_cpus * ep_per_cpu
+    print('t_cpu:', train_cpus, 'ep_cpu: ', ep_per_cpu)
 
     # Create environment
     env = gym.make(env_name)
@@ -191,17 +194,18 @@ def main(ep_per_cpu, game, configuration_file, run_name):
 
 def parse_arguments():
     parser = ArgumentParser()
-    parser.add_argument('-e', '--episodes_per_cpu',
-                        help="Number of episode evaluations for each CPU, "
-                             "population_size = episodes_per_cpu * Number of CPUs",
-                        default=1, type=int)
-    parser.add_argument('-g', '--game', help="Atari Game used to train an agent")
-    parser.add_argument('-c', '--configuration_file', help='Path to configuration file')
+    # parser.add_argument('-e', '--episodes_per_cpu',
+    #                     help="Number of episode evaluations for each CPU, "
+    #                          "population_size = episodes_per_cpu * Number of CPUs",
+    #                     default=1, type=int)
+    # parser.add_argument('-g', '--game', help="Atari Game used to train an agent")
+    # parser.add_argument('-c', '--configuration_file', help='Path to configuration file')
     parser.add_argument('-r', '--run_name', help='Name of the run, used to create log folder name', type=str)
     args = parser.parse_args()
-    return args.episodes_per_cpu, args.game, args.configuration_file, args.run_name
+    return args.run_name #args.episodes_per_cpu, args.game, args.configuration_file, args.run_name
 
 
 if __name__ == '__main__':
-    ep_per_cpu, game, configuration_file, run_name = parse_arguments()
-    main(ep_per_cpu, game, configuration_file, run_name)
+    configuration_file = './configurations/sample_configuration.json'
+    run_name = parse_arguments()
+    main(configuration_file, run_name)
