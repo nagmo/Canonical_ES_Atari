@@ -3,6 +3,8 @@ from src.policy import Policy
 from src.logger import Logger
 
 from argparse import ArgumentParser
+import mpi4py
+mpi4py.rc.recv_mprobe = False
 from mpi4py import MPI
 import numpy as np
 import time
