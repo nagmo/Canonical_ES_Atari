@@ -39,8 +39,8 @@ def main(configuration_file, run_name):
     # MPI stuff
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()
-    import os
-    cpus = len(os.sched_getaffinity(0)) # comm.Get_size()
+    cpus = comm.Get_size()
+    print('cpus: ' + cpus)
 
     # One cpu (rank 0) will evaluate results
     train_cpus = cpus - 1
