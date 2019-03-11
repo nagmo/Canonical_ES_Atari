@@ -40,7 +40,7 @@ def main(configuration_file, run_name):
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()
     cpus = comm.Get_size()
-    print('cpus: ' + cpus)
+    print('cpus: ', cpus)
 
     # One cpu (rank 0) will evaluate results
     train_cpus = cpus - 1
