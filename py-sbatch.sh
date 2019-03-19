@@ -1,5 +1,5 @@
 #!/bin/bash
-
+module load mpi/openmpi/2.1-gnu-4.8
 ###
 # CS236605: Deep Learning
 # py-sbatch.sh
@@ -26,7 +26,7 @@
 # Parameters for sbatch
 #
 NUM_NODES=1
-NUM_CORES=2
+NUM_CORES=4
 NUM_GPUS=1
 QUEUE=236605
 JOB_NAME="submit_job"
@@ -37,7 +37,7 @@ MAIL_TYPE=ALL # Valid values are NONE, BEGIN, END, FAIL, REQUEUE, ALL
 # Conda parameters
 #
 CONDA_HOME=$HOME/miniconda3
-CONDA_ENV=cs236605-hw
+CONDA_ENV=ES_deep
 
 sbatch \
 	-N $NUM_NODES \
@@ -62,4 +62,5 @@ python $@
 
 echo "*** SLURM BATCH JOB '$JOB_NAME' DONE ***"
 EOF
+
 
