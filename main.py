@@ -142,7 +142,7 @@ def main(configuration_file, run_name):
         # MPI stuff
         # Initialize array which will be updated with information from all workers using MPI
         results = np.empty((cpus, 3 * ep_per_cpu), dtype=np.int32)
-        comm.Allgather([msg, MPI.INT], [results, MPI.INT])
+        comm.Allgather([msg, MPI.INT], [results, MPI.INT]) #TODO: find replacement to Allgather
 
         # Skip empty evaluation results from worker with id 0
         results = results[1:, :]

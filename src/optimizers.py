@@ -202,7 +202,7 @@ class CanonicalESOptimizer(BaseOptimizer):
         logger.log('PSigmaNorm'.ljust(20) + '%f' % self.magnitude(self.p_sigma))
 
     def log_path(self, game, network, run_name):
-        return "logs_mpi/%s/Baseline/%s/%d/%d/%f/%f/%f/%s" % \
+        return "logs_mpi/%s/Baseline/%s/%d/%d/%f    /%f/%f/%s" % \
                (game, network, self.lam, self.u, self.sigma, self.lr, self.c_sigma_factor, run_name)
 
     # We might want to log other stuff as well ???
