@@ -128,6 +128,7 @@ class Policy(object):
         for _ in range(self.max_episode_len):
             ac = self.sess.run(self.action_op, feed_dict={self.input_placeholder: [ob], self.is_training: False})
             ob, rew, done, _ = self.env.step(np.argmax(ac))
+            ob = np.asarray(ob)
             logger.save_ob(ob)
             rew_sum += rew
             t += 1
