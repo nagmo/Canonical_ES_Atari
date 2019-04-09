@@ -28,3 +28,7 @@ class Logger(object):
 
     def save_vb(self, vb):
         np.save(os.path.join(self.log_dir, "vb.npy"), vb)
+
+    def save_actions(self, actions):
+        with open(os.path.join(self.log_dir, "actions.txt"), "a") as f:
+            f.write(actions)

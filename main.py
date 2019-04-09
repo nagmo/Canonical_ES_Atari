@@ -42,14 +42,14 @@ def main(configuration_file, run_name):
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()
     cpus = comm.Get_size()
-    print('cpus: ', cpus)
+    print(f'number of cpus:{cpus}, current cpu:{rank}')
 
     # One cpu (rank 0) will evaluate results
     train_cpus = cpus - 1
 
     # Deduce population size
     lam = train_cpus * ep_per_cpu
-    print('t_cpu:', train_cpus, 'ep_cpu: ', ep_per_cpu)
+    print('train_cpu:', train_cpus, 'ep_cpu: ', ep_per_cpu)
 
     # Create environment
     env = gym.make(env_name)

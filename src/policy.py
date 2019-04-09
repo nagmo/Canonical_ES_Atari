@@ -1,8 +1,9 @@
 from src.env_wrappers import wrap_dqn
+from src.logger import Logger
 from src.models import Nature
 import tensorflow as tf
 import numpy as np
-
+from scipy.sparse import csr_matrix
 
 nonlin_dict = {
     'elu': tf.nn.elu,
@@ -127,6 +128,7 @@ class Policy(object):
             ac = self.sess.run(self.action_op, feed_dict={self.input_placeholder: [ob], self.is_training: False})
             ob, rew, done, _ = self.env.step(np.argmax(ac))
             ob = np.asarray(ob)
+            print(ob.nbytes, csr_matrix(ob, ob.shape).nbytes)
             rew_sum += rew
             t += 1
             if render:

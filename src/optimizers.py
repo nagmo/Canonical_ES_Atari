@@ -145,7 +145,6 @@ class CanonicalESOptimizer(BaseOptimizer):
         # One could experiment rescaling c_sigma to stronger adjust sample distribution noise.
         # Disabled for our experiments (by setting to 1).
         self.c_sigma_factor = settings['c_sigma_factor']
-        print('u: ', self.u, 'lam: ', self.lam)
         assert(self.u <= self.lam)
 
         # Compute weights for weighted mean of the top self.u offsprings
@@ -176,7 +175,6 @@ class CanonicalESOptimizer(BaseOptimizer):
         # Simple weighted mean of top self.u offsprings
         for i in range(self.u):
             ind = ids[best[i]]
-            print('ind: ', ind, 'n: ', self.n, 'best: ', best, 'ids: ', ids)
             step += self.w[i] * self.noise_table[ind:ind + self.n]
 
         self.step = self.lr * self.sigma * step
