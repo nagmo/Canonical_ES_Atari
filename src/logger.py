@@ -33,6 +33,7 @@ class Logger(object):
         with open(os.path.join(self.log_dir, "actions.txt"), "a") as f:
             f.write(actions)
 
-    def save_ob(self, ob):
-        np.save(os.path.join(self.log_dir, "ob.npy"), ob)
+    @staticmethod
+    def save_ob(ob, log_dir):
+        np.save(os.path.join(log_dir, "ob.npy"), ob)
         exit(0)
