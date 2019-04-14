@@ -134,6 +134,7 @@ class CanonicalESOptimizer(BaseOptimizer):
 
         self.lam = lam
         self.sigma = settings['sigma']
+        self.novelty = settings['novelty']
 
         # One could experiment with different learning_rates.
         # Disabled for our experiments (by setting to 1).
@@ -166,16 +167,23 @@ class CanonicalESOptimizer(BaseOptimizer):
         p = self.parameters + self.sigma * self.noise_table[r_id:(r_id + self.n)]
         return r_id, p
 
-    def update(self, ids, rewards):
-        # Best will point to solutions with the highest rewards
-        # best[0] = index of the solution with the best reward
-        best = np.array(rewards).argsort()[::-1][:self.u]
+    def update(self, ids, rewards, novelties):
         step = np.zeros(self.n)
-
-        # Simple weighted mean of top self.u offsprings
-        for i in range(self.u):
-            ind = ids[best[i]]
-            step += self.w[i] * self.noise_table[ind:ind + self.n]
+        if self.novelty is True:
+            norm_rewards = rewards / np.max(rewards)
+            norm_novelties = novelties / np.max(novelties)
+            meta_indices = self.select_meta_population(norm_rewards, norm_novelties)
+            for idx in meta_indices:
+                ind = ids[idx]
+                step += self.w[idx] * self.noise_table[ind:ind + self.n] * (norm_novelties[idx] + norm_rewards[idx])
+        else:
+            # Best will point to solutions with the highest rewards
+            # best[0] = index of the solution with the best reward
+            best = np.array(rewards).argsort()[::-1][:self.u]
+            # Simple weighted mean of top self.u offsprings
+            for i in range(self.u):
+                ind = ids[best[i]]
+                step += self.w[i] * self.noise_table[ind:ind + self.n]
 
         self.step = self.lr * self.sigma * step
         self.parameters += self.step
@@ -185,6 +193,12 @@ class CanonicalESOptimizer(BaseOptimizer):
         self.sigma = self.sigma * np.exp((self.c_sigma / 2) * (np.sum(np.square(self.p_sigma)) / self.n - 1))
 
         self.iteration += 1
+
+    def select_meta_population(self, ids, norm_rewards, norm_novelties):
+        meta_probabilities = (norm_novelties + norm_rewards) / (np.sum(norm_rewards) + np.sum(norm_novelties))
+        return np.random.choice(meta_probabilities.shape[0], size=self.u, p=meta_probabilities)
+
+
 
     def log_basic(self, logger):
         logger.log('Lambda'.ljust(25) + '%d' % self.lam)

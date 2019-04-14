@@ -132,6 +132,7 @@ class Policy(object):
             ob = np.asarray(ob)
             self.ns.add_observation(ob)
             novelty = self.ns.get_novelty_score()
+            #todo: add nov sum
             rew_sum += rew
             t += 1
             if render:
@@ -139,7 +140,7 @@ class Policy(object):
             if done:
                 break
 
-        return rew_sum, t
+        return rew_sum, t, novelty
 
 
 # Wrapper for setting some parameters to 0 in specified layers.

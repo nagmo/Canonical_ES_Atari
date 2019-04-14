@@ -111,40 +111,46 @@ def main(configuration_file, run_name):
             lens = [0] * ep_per_cpu
             rews = [0] * ep_per_cpu
             inds = [0] * ep_per_cpu
+            novs = [0] * ep_per_cpu
 
             # For each episode in this CPU we get new parameters,
             # update policy network and perform policy rollout
             for i in range(ep_per_cpu):
                 ind, p = optimizer.get_parameters()
                 policy.set_parameters(p)
-                e_rew, e_len = policy.rollout()
+                e_rew, e_len, e_nov = policy.rollout()
                 lens[i] = e_len
                 rews[i] = e_rew
                 inds[i] = ind
+                novs[i] = e_nov
 
             # Aggregate information, will later send it to each worker using MPI
-            msg = np.array(rews + lens + inds, dtype=np.int32)
+            msg = np.array(rews + lens + inds + novs, dtype=np.int32)
 
         # Worker rank 0 that runs evaluation episodes
         else:
             rews = [0] * ep_per_cpu
             lens = [0] * ep_per_cpu
+            novs = [0] * ep_per_cpu
             for i in range(ep_per_cpu):
                 ind, p = optimizer.get_parameters()
                 policy.set_parameters(p)
-                e_rew, e_len = policy.rollout()
+                e_rew, e_len, e_nov = policy.rollout()
                 rews[i] = e_rew
                 lens[i] = e_len
+                novs[i] = e_nov
 
             eval_mean_rew = np.mean(rews)
             eval_max_rew = np.max(rews)
+            eval_mean_nov = np.mean(novs)
+            eval_max_nov = np.max(novs)
 
             # Empty array, evaluation results are not used for the update
-            msg = np.zeros(3 * ep_per_cpu, dtype=np.int32)
+            msg = np.zeros(4 * ep_per_cpu, dtype=np.int32)
 
         # MPI stuff
         # Initialize array which will be updated with information from all workers using MPI
-        results = np.empty((cpus, 3 * ep_per_cpu), dtype=np.int32)
+        results = np.empty((cpus, 4 * ep_per_cpu), dtype=np.int32)
         comm.Allgather([msg, MPI.INT], [results, MPI.INT])  # TODO: find replacement to Allgather
 
         # Skip empty evaluation results from worker with id 0
@@ -153,10 +159,11 @@ def main(configuration_file, run_name):
         # Extract IDs and rewards
         rews = results[:, :ep_per_cpu].flatten()
         lens = results[:, ep_per_cpu:(2 * ep_per_cpu)].flatten()
-        ids = results[:, (2 * ep_per_cpu):].flatten()
+        ids = results[:, (2 * ep_per_cpu):(3 * ep_per_cpu)].flatten()
+        novs = results[:, (3 * ep_per_cpu):].flatten()
 
         # Update parameters
-        optimizer.update(ids=ids, rewards=rews)
+        optimizer.update(ids=ids, rewards=rews, novelties=novs)
 
         # Steps passed = Sum of episode steps from all offsprings
         steps = np.sum(lens)
@@ -170,12 +177,18 @@ def main(configuration_file, run_name):
             time_elapsed = (time.time() - start_time) / 60
             train_mean_rew = np.mean(rews)
             train_max_rew = np.max(rews)
+            train_mean_nov = np.mean(novs)
+            train_max_nov = np.max(novs)
             logger.log('------------------------------------')
             logger.log('Iteration'.ljust(25) + '%f' % optimizer.iteration)
             logger.log('EvalMeanReward'.ljust(25) + '%f' % eval_mean_rew)
             logger.log('EvalMaxReward'.ljust(25) + '%f' % eval_max_rew)
+            logger.log('EvalMeanNovelty'.ljust(25) + '%f' % eval_mean_nov)
+            logger.log('EvalMaxNovelty'.ljust(25) + '%f' % eval_max_nov)
             logger.log('TrainMeanReward'.ljust(25) + '%f' % train_mean_rew)
             logger.log('TrainMaxReward'.ljust(25) + '%f' % train_max_rew)
+            logger.log('TrainMeanNovelty'.ljust(25) + '%f' % train_mean_nov)
+            logger.log('TrainMaxNovelty'.ljust(25) + '%f' % train_max_nov)
             logger.log('StepsSinceStart'.ljust(25) + '%f' % steps_passed)
             logger.log('StepsThisIter'.ljust(25) + '%f' % steps)
             logger.log('IterationTime'.ljust(25) + '%f' % iteration_time)
