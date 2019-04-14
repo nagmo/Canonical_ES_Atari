@@ -1,3 +1,5 @@
+import collections
+
 import numpy as np
 from itertools import groupby
 from operator import itemgetter
@@ -135,6 +137,8 @@ class CanonicalESOptimizer(BaseOptimizer):
         self.lam = lam
         self.sigma = settings['sigma']
         self.novelty = settings['novelty']
+        self.nov_rew_w = 1.0
+        self.last_rew = collections.deque(maxlen=settings['last_rewards_to_average'])
 
         # One could experiment with different learning_rates.
         # Disabled for our experiments (by setting to 1).
@@ -175,7 +179,17 @@ class CanonicalESOptimizer(BaseOptimizer):
             meta_indices = self.select_meta_population(norm_rewards, norm_novelties)
             for idx in meta_indices:
                 ind = ids[idx]
-                step += self.w[idx] * self.noise_table[ind:ind + self.n] * (norm_novelties[idx] + norm_rewards[idx])
+                if self.last_rew.maxlen == 0:
+                    self.nov_rew_w = 0.5
+                else:
+                    delta = np.max(rewards) - np.average(self.last_rew)
+                    if delta > 0:
+                        self.nov_rew_w = np.minimum(self.nov_rew_w * 1.01, 1)
+                    else:
+                        self.nov_rew_w = np.maximum(self.nov_rew_w * 0.9, 0.5)
+                    self.last_rew.append(np.max(rewards))
+                nov_rew_step = (self.nov_rew_w * norm_novelties[idx] + (1 - self.nov_rew_w) * norm_rewards[idx])
+                step += self.w[idx] * self.noise_table[ind:ind + self.n] * nov_rew_step
         else:
             # Best will point to solutions with the highest rewards
             # best[0] = index of the solution with the best reward

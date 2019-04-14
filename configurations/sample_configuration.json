@@ -5,7 +5,8 @@
     "sigma": 0.01,
     "c_sigma_factor": 1,
     "mu": 5,
-    "novelty": true
+    "novelty": true,
+    "last_rewards_to_average": 10
   },
   "network": "Nature",
   "nonlin_name": "elu",
