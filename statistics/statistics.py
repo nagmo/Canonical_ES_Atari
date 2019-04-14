@@ -32,7 +32,11 @@ def create_plot(x, x_label, y, y_label, file_name):
     plt.yticks(range(min_y, max_y, int((max_y - min_y) / 10)))
     plt.savefig(file_name)
 
+def make_stat(in_path, out_dir):
+    create_plots_from_file(in_path, out_dir)
 
-if __name__ == '__main__':
-    origin_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/40/0.010000/1.000000/1.000000/None/stat.txt'
-    create_plots_from_file(origin_stat_path, 'origin')
+
+#if __name__ == '__main__':
+#    origin_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/40/0.010000/1.000000/1.000000/None/stat.txt'
+#    create_plots_from_file(origin_stat_path, 'origin')
+
