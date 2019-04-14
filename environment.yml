@@ -87,4 +87,5 @@ dependencies:
     - pyopengl==3.1.0
     - requests==2.21.0
     - urllib3==1.24.1
+    - matplotlib
 prefix: /home/nevoagmon/miniconda3/envs/ES_deep

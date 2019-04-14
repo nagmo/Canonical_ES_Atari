@@ -1,16 +1,18 @@
+import json
+import time
+from argparse import ArgumentParser
+
+import gym
+import mpi4py
+import numpy as np
+from mpi4py import MPI
+
+from src.NS import NS
+from src.logger import Logger
 from src.optimizers import OpenAIOptimizer, CanonicalESOptimizer, CanonicalESMeanOptimizer
 from src.policy import Policy
-from src.logger import Logger
 
-from argparse import ArgumentParser
-import mpi4py
 mpi4py.rc.recv_mprobe = False
-from mpi4py import MPI
-import numpy as np
-import time
-import json
-import gym
-
 
 # This will allow us to create optimizer based on the string value from the configuration file.
 # Add you optimizers to this dictionary.
@@ -37,6 +39,7 @@ def main(configuration_file, run_name):
     game = configuration['game']
     ep_per_cpu = configuration['ep_per_cpu']
     env_name = '%sNoFrameskip-v4' % game
+    ns = NS()
 
     # MPI stuff
     comm = MPI.COMM_WORLD
@@ -56,7 +59,7 @@ def main(configuration_file, run_name):
 
     # Create policy (Deep Neural Network)
     # Internally it applies preprocessing to the environment state
-    policy = Policy(env, network=configuration['network'], nonlin_name=configuration['nonlin_name'])
+    policy = Policy(env, network=configuration['network'], nonlin_name=configuration['nonlin_name'], novelty=ns)
 
     # Create reference batch used for normalization
     # It will be overwritten with vb from worker with rank 0
@@ -142,15 +145,15 @@ def main(configuration_file, run_name):
         # MPI stuff
         # Initialize array which will be updated with information from all workers using MPI
         results = np.empty((cpus, 3 * ep_per_cpu), dtype=np.int32)
-        comm.Allgather([msg, MPI.INT], [results, MPI.INT]) #TODO: find replacement to Allgather
+        comm.Allgather([msg, MPI.INT], [results, MPI.INT])  # TODO: find replacement to Allgather
 
         # Skip empty evaluation results from worker with id 0
         results = results[1:, :]
 
         # Extract IDs and rewards
         rews = results[:, :ep_per_cpu].flatten()
-        lens = results[:, ep_per_cpu:(2*ep_per_cpu)].flatten()
-        ids = results[:, (2*ep_per_cpu):].flatten()
+        lens = results[:, ep_per_cpu:(2 * ep_per_cpu)].flatten()
+        ids = results[:, (2 * ep_per_cpu):].flatten()
 
         # Update parameters
         optimizer.update(ids=ids, rewards=rews)
@@ -164,7 +167,7 @@ def main(configuration_file, run_name):
         # after 1 hour of training or after 1 billion frames
         if rank == 0:
             iteration_time = (time.time() - iter_start_time)
-            time_elapsed = (time.time() - start_time)/60
+            time_elapsed = (time.time() - start_time) / 60
             train_mean_rew = np.mean(rews)
             train_max_rew = np.max(rews)
             logger.log('------------------------------------')
@@ -183,8 +186,8 @@ def main(configuration_file, run_name):
             logger.log('------------------------------------')
 
             # Write stuff for training curve plot
-            stat_string = "{},\t{},\t{},\t{},\t{},\t{}\n".\
-                format(steps_passed, (time.time()-start_time),
+            stat_string = "{},\t{},\t{},\t{},\t{},\t{}\n". \
+                format(steps_passed, (time.time() - start_time),
                        eval_mean_rew, eval_max_rew, train_mean_rew, train_max_rew)
             logger.write_general_stat(stat_string)
             logger.write_optimizer_stat(optimizer.stat_string())
@@ -204,7 +207,7 @@ def parse_arguments():
     # parser.add_argument('-c', '--configuration_file', help='Path to configuration file')
     parser.add_argument('-r', '--run_name', help='Name of the run, used to create log folder name', type=str)
     args = parser.parse_args()
-    return args.run_name #args.episodes_per_cpu, args.game, args.configuration_file, args.run_name
+    return args.run_name  # args.episodes_per_cpu, args.game, args.configuration_file, args.run_name
 
 
 if __name__ == '__main__':
