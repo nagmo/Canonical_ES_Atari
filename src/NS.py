@@ -14,7 +14,7 @@ class NS:
 
     def add_observation(self, ob: np.ndarray):
         # ob_comp = zlib.compress(ob.tostring())
-        self.queue.append(np.reshape(ob, (2, -1)))
+        self.queue.append(ob.flatten())
 
     def get_novelty_score(self):
         pca_rep = self.pca.fit_transform(self.queue)
