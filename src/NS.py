@@ -13,8 +13,8 @@ class NS:
         self.neighbors = NearestNeighbors(n_neighbors=k_neighbors)
 
     def add_observation(self, ob: np.ndarray):
-        ob_comp = zlib.compress(ob.tostring())
-        self.queue.append(ob_comp)
+        # ob_comp = zlib.compress(ob.tostring())
+        self.queue.append(ob.flatten())
 
     def get_novelty_score(self):
         pca_rep = self.pca.fit_transform(self.queue)
