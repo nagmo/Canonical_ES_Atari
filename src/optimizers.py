@@ -188,7 +188,7 @@ class CanonicalESOptimizer(BaseOptimizer):
                     else:
                         self.nov_rew_w = np.maximum(self.nov_rew_w * 0.9, 0.5)
                     self.last_rew.append(np.max(rewards))
-                nov_rew_step = (self.nov_rew_w * norm_novelties[idx] + (1 - self.nov_rew_w) * norm_rewards[idx])
+                nov_rew_step = (self.nov_rew_w * norm_rewards[idx] + (1 - self.nov_rew_w) * norm_novelties[idx])
                 step += self.w[idx] * self.noise_table[ind:ind + self.n] * nov_rew_step
         else:
             # Best will point to solutions with the highest rewards

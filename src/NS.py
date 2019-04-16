@@ -20,6 +20,8 @@ class NS:
 
     def get_novelty_score(self):
         arr = np.asarray(self.queue)
+        if arr.shape[0] < 10:
+            return 0
         print(f'np arr: {arr.shape}')
         pca_rep = self.pca.fit_transform(arr)
         nbrs = self.neighbors.fit(pca_rep)
