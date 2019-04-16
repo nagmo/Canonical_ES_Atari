@@ -17,7 +17,7 @@ class NS:
         self.queue.append(ob)
 
     def get_novelty_score(self):
-        pca_rep = self.pca.fit_transform(np.asarray(self.queue).flatten())
+        pca_rep = self.pca.fit_transform(np.reshape(self.queue, (2, -1)))
         nbrs = self.neighbors.fit(pca_rep)
         distances, indices = nbrs.kneighbors(pca_rep[0])
         return sum(distances)
