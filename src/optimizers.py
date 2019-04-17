@@ -177,7 +177,7 @@ class CanonicalESOptimizer(BaseOptimizer):
             norm_rewards = rewards / np.max(rewards)
             norm_novelties = novelties / np.max(novelties)
             meta_indices = self.select_meta_population(norm_rewards, norm_novelties)
-            for idx in meta_indices:
+            for i, idx in zip(meta_indices):
                 ind = ids[idx]
                 if self.last_rew.maxlen == 0:
                     self.nov_rew_w = 0.5
@@ -189,7 +189,7 @@ class CanonicalESOptimizer(BaseOptimizer):
                         self.nov_rew_w = np.maximum(self.nov_rew_w * 0.9, 0.5)
                     self.last_rew.append(np.max(rewards))
                 nov_rew_step = (self.nov_rew_w * norm_rewards[idx] + (1 - self.nov_rew_w) * norm_novelties[idx])
-                step += self.w[idx] * self.noise_table[ind:ind + self.n] * nov_rew_step
+                step += self.w[i] * self.noise_table[ind:ind + self.n] * nov_rew_step
         else:
             # Best will point to solutions with the highest rewards
             # best[0] = index of the solution with the best reward
