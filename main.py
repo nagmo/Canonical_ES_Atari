@@ -83,6 +83,7 @@ def main(configuration_file, run_name):
 
     # Only rank 0 worker will log information from the training
     logger = None
+    print (f'rank: {rank}')
     if rank == 0:
         # Initialize logger, save virtual batch and save some basic stuff at the beginning
         logger = Logger(optimizer.log_path(game, configuration['network'], run_name))
