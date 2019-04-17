@@ -22,4 +22,5 @@ class NS:
         pca_rep = self.pca.fit_transform(np.asarray(self.queue))
         nbrs = self.neighbors.fit(pca_rep)
         distances, indices = nbrs.kneighbors(np.reshape(pca_rep[0], (1, -1)))
-        return int(sum(distances))
+        print (f'shape: {istances.shape}')
+        return sum(sum(distances))
