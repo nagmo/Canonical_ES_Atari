@@ -23,4 +23,4 @@ class NS:
         nbrs = self.neighbors.fit(pca_rep)
         distances, indices = nbrs.kneighbors(np.reshape(pca_rep[0], (1, -1)))
         print (f'shape: {distances.shape}')
-        return sum(sum(distances))
+        return np.sum(distances, axis=1)
