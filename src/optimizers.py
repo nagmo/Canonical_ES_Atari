@@ -177,7 +177,7 @@ class CanonicalESOptimizer(BaseOptimizer):
             norm_rewards = rewards / np.max(rewards)
             norm_novelties = novelties / np.max(novelties)
             meta_indices = self.select_meta_population(norm_rewards, norm_novelties)
-            for i, idx in zip(meta_indices):
+            for i, idx in enumerate(meta_indices):
                 ind = ids[idx]
                 if self.last_rew.maxlen == 0:
                     self.nov_rew_w = 0.5
