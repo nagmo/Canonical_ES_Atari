@@ -208,7 +208,7 @@ class CanonicalESOptimizer(BaseOptimizer):
 
         self.iteration += 1
 
-    def select_meta_population(self, ids, norm_rewards, norm_novelties):
+    def select_meta_population(self, norm_rewards, norm_novelties):
         meta_probabilities = (norm_novelties + norm_rewards) / (np.sum(norm_rewards) + np.sum(norm_novelties))
         return np.random.choice(meta_probabilities.shape[0], size=self.u, p=meta_probabilities)
 
