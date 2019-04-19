@@ -29,8 +29,9 @@ def create_plot(x, x_label, y, y_label, file_name):
     plt.xlabel(x_label)
     min_y = int(min(y))
     max_y = int(max(y))
-    plt.yticks(range(min_y, max_y, int((max_y - min_y) / 10)))
+    plt.yticks(range(min_y, max_y, max((max_y - min_y) // 10, 1)))
     plt.savefig(file_name)
+    plt.clf()
 
 def make_stat(in_path, out_dir):
     create_plots_from_file(in_path, out_dir)
