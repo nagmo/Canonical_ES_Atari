@@ -7,7 +7,6 @@ import mpi4py
 import numpy as np
 from mpi4py import MPI
 
-from src.NS import NS
 from src.logger import Logger
 from src.optimizers import OpenAIOptimizer, CanonicalESOptimizer, CanonicalESMeanOptimizer
 from src.policy import Policy
@@ -39,7 +38,7 @@ def main(configuration_file, run_name):
     game = configuration['game']
     ep_per_cpu = configuration['ep_per_cpu']
     env_name = '%sNoFrameskip-v4' % game
-    ns = NS()
+    # ns = NS()
 
     # MPI stuff
     comm = MPI.COMM_WORLD
@@ -59,7 +58,7 @@ def main(configuration_file, run_name):
 
     # Create policy (Deep Neural Network)
     # Internally it applies preprocessing to the environment state
-    policy = Policy(env, network=configuration['network'], nonlin_name=configuration['nonlin_name'], novelty=ns)
+    policy = Policy(env, network=configuration['network'], nonlin_name=configuration['nonlin_name'])
 
     # Create reference batch used for normalization
     # It will be overwritten with vb from worker with rank 0
