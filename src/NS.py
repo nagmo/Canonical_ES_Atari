@@ -14,10 +14,12 @@ class NS:
 
     def add_observation(self, ob: np.ndarray):
         # ob_comp = zlib.compress(ob.tostring())
-        self.queue.append(ob)
+        self.queue.append(ob.flatten())
 
     def get_novelty_score(self):
-        pca_rep = self.pca.fit_transform(self.queue)
+        if len(self.queue) < 10:
+            return 0
+        pca_rep = self.pca.fit_transform(np.asarray(self.queue))
         nbrs = self.neighbors.fit(pca_rep)
-        distances, indices = nbrs.kneighbors(pca_rep[0])
-        return sum(distances)
+        distances, indices = nbrs.kneighbors(np.reshape(pca_rep[0], (1, -1)))
+        return np.sum(distances, axis=1)

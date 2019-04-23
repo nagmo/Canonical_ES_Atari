@@ -1,4 +1,5 @@
 from src import logger
+from src.NS import NS
 from src.env_wrappers import wrap_dqn
 from src.logger import Logger
 from src.models import Nature
@@ -18,9 +19,10 @@ network_dict = {
     "Nature": Nature,
 }
 
+novelty = NS()
 
 class Policy(object):
-    def __init__(self, env, network, nonlin_name, novelty):
+    def __init__(self, env, network, nonlin_name):
         # Size of the virtual batch
         self.vb_size = 128
         # Maximum length of each episode (in steps)
