@@ -1,0 +1,3205 @@
+Game                     Qbert
+Network                  Nature
+Optimizer                CanonicalESOptimizer
+Number of CPUs           21
+Population               40
+Dimensionality           1687212
+Lambda                   40
+Mu                       5
+LearningRate             1.000000
+MuW                      3.167299
+CSigma                   0.000003
+CSigmaFactor             1.000000
+Const1                   0.004405
+------------------------------------
+Iteration                1.000000
+EvalMeanReward           312.500000
+EvalMaxReward            375.000000
+EvalMeanNovelty          3512.494107
+EvalMaxNovelty           3623.050074
+TrainMeanReward          174.375000
+TrainMaxReward           500.000000
+TrainMeanNovelty         3743.425000
+TrainMaxNovelty          11103.000000
+StepsSinceStart          13470.000000
+StepsThisIter            13470.000000
+IterationTime            455.811961
+TimeSinceStart           9.112260
+ParamNorm           65.051704
+StepNorm            3.674167
+Sigma               0.010000
+PSigmaNorm          1.618319
+------------------------------------
+------------------------------------
+Iteration                2.000000
+EvalMeanReward           187.500000
+EvalMaxReward            275.000000
+EvalMeanNovelty          1904.048614
+EvalMaxNovelty           3465.185516
+TrainMeanReward          201.250000
+TrainMaxReward           1050.000000
+TrainMeanNovelty         2730.975000
+TrainMaxNovelty          7135.000000
+StepsSinceStart          27371.000000
+StepsThisIter            13901.000000
+IterationTime            470.743484
+TimeSinceStart           16.960583
+ParamNorm           65.219131
+StepNorm            4.631804
+Sigma               0.010000
+PSigmaNorm          2.605157
+------------------------------------
+------------------------------------
+Iteration                3.000000
+EvalMeanReward           225.000000
+EvalMaxReward            225.000000
+EvalMeanNovelty          601.254094
+EvalMaxNovelty           601.254478
+TrainMeanReward          165.000000
+TrainMaxReward           525.000000
+TrainMeanNovelty         3111.725000
+TrainMaxNovelty          9917.000000
+StepsSinceStart          40809.000000
+StepsThisIter            13438.000000
+IterationTime            478.140602
+TimeSinceStart           24.931667
+ParamNorm           65.337997
+StepNorm            3.958849
+Sigma               0.010000
+PSigmaNorm          3.134447
+------------------------------------
+------------------------------------
+Iteration                4.000000
+EvalMeanReward           275.000000
+EvalMaxReward            300.000000
+EvalMeanNovelty          4669.535386
+EvalMaxNovelty           4710.698614
+TrainMeanReward          139.375000
+TrainMaxReward           525.000000
+TrainMeanNovelty         3026.250000
+TrainMaxNovelty          7558.000000
+StepsSinceStart          54686.000000
+StepsThisIter            13877.000000
+IterationTime            490.126847
+TimeSinceStart           33.102941
+ParamNorm           65.473671
+StepNorm            4.256284
+Sigma               0.010000
+PSigmaNorm          3.652151
+------------------------------------
+------------------------------------
+Iteration                5.000000
+EvalMeanReward           362.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          4209.098873
+EvalMaxNovelty           7306.460765
+TrainMeanReward          178.750000
+TrainMaxReward           650.000000
+TrainMeanNovelty         3461.900000
+TrainMaxNovelty          7806.000000
+StepsSinceStart          68869.000000
+StepsThisIter            14183.000000
+IterationTime            520.773150
+TimeSinceStart           41.784811
+ParamNorm           65.629654
+StepNorm            4.455214
+Sigma               0.010000
+PSigmaNorm          4.146919
+------------------------------------
+------------------------------------
+Iteration                6.000000
+EvalMeanReward           312.500000
+EvalMaxReward            325.000000
+EvalMeanNovelty          5176.041588
+EvalMaxNovelty           6750.625012
+TrainMeanReward          189.375000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2935.525000
+TrainMaxNovelty          7624.000000
+StepsSinceStart          82616.000000
+StepsThisIter            13747.000000
+IterationTime            461.399702
+TimeSinceStart           49.477326
+ParamNorm           65.756531
+StepNorm            4.134581
+Sigma               0.010000
+PSigmaNorm          4.529566
+------------------------------------
+------------------------------------
+Iteration                7.000000
+EvalMeanReward           325.000000
+EvalMaxReward            325.000000
+EvalMeanNovelty          4282.202314
+EvalMaxNovelty           7735.034328
+TrainMeanReward          216.250000
+TrainMaxReward           650.000000
+TrainMeanNovelty         3475.975000
+TrainMaxNovelty          10835.000000
+StepsSinceStart          97127.000000
+StepsThisIter            14511.000000
+IterationTime            489.415114
+TimeSinceStart           57.636432
+ParamNorm           65.786232
+StepNorm            1.991675
+Sigma               0.010000
+PSigmaNorm          4.613662
+------------------------------------
+------------------------------------
+Iteration                8.000000
+EvalMeanReward           250.000000
+EvalMaxReward            250.000000
+EvalMeanNovelty          1602.622773
+EvalMaxNovelty           1602.647945
+TrainMeanReward          205.000000
+TrainMaxReward           625.000000
+TrainMeanNovelty         3378.250000
+TrainMaxNovelty          8662.000000
+StepsSinceStart          111837.000000
+StepsThisIter            14710.000000
+IterationTime            503.947222
+TimeSinceStart           66.037687
+ParamNorm           65.943436
+StepNorm            4.573038
+Sigma               0.010000
+PSigmaNorm          5.035872
+------------------------------------
+------------------------------------
+Iteration                9.000000
+EvalMeanReward           262.500000
+EvalMaxReward            325.000000
+EvalMeanNovelty          4122.410894
+EvalMaxNovelty           5164.456176
+TrainMeanReward          185.625000
+TrainMaxReward           550.000000
+TrainMeanNovelty         2951.175000
+TrainMaxNovelty          9224.000000
+StepsSinceStart          126264.000000
+StepsThisIter            14427.000000
+IterationTime            509.975366
+TimeSinceStart           74.539931
+ParamNorm           66.104134
+StepNorm            4.691079
+Sigma               0.010000
+PSigmaNorm          5.440294
+------------------------------------
+------------------------------------
+Iteration                10.000000
+EvalMeanReward           225.000000
+EvalMaxReward            275.000000
+EvalMeanNovelty          3795.301602
+EvalMaxNovelty           4065.056256
+TrainMeanReward          196.875000
+TrainMaxReward           575.000000
+TrainMeanNovelty         3102.625000
+TrainMaxNovelty          8484.000000
+StepsSinceStart          140323.000000
+StepsThisIter            14059.000000
+IterationTime            487.112967
+TimeSinceStart           82.660799
+ParamNorm           66.155540
+StepNorm            2.611781
+Sigma               0.010000
+PSigmaNorm          5.559420
+------------------------------------
+------------------------------------
+Iteration                11.000000
+EvalMeanReward           525.000000
+EvalMaxReward            525.000000
+EvalMeanNovelty          1634.761733
+EvalMaxNovelty           1695.495212
+TrainMeanReward          190.000000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2588.800000
+TrainMaxNovelty          7801.000000
+StepsSinceStart          154114.000000
+StepsThisIter            13791.000000
+IterationTime            471.956653
+TimeSinceStart           90.528875
+ParamNorm           66.411247
+StepNorm            5.809261
+Sigma               0.010000
+PSigmaNorm          6.121035
+------------------------------------
+------------------------------------
+Iteration                12.000000
+EvalMeanReward           312.500000
+EvalMaxReward            450.000000
+EvalMeanNovelty          2999.020541
+EvalMaxNovelty           4605.346018
+TrainMeanReward          233.750000
+TrainMaxReward           675.000000
+TrainMeanNovelty         2691.000000
+TrainMaxNovelty          9965.000000
+StepsSinceStart          169331.000000
+StepsThisIter            15217.000000
+IterationTime            548.178649
+TimeSinceStart           99.667350
+ParamNorm           66.535828
+StepNorm            4.102833
+Sigma               0.010000
+PSigmaNorm          6.380527
+------------------------------------
+------------------------------------
+Iteration                13.000000
+EvalMeanReward           175.000000
+EvalMaxReward            275.000000
+EvalMeanNovelty          2842.367211
+EvalMaxNovelty           3114.775877
+TrainMeanReward          234.375000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2819.225000
+TrainMaxNovelty          8022.000000
+StepsSinceStart          185031.000000
+StepsThisIter            15700.000000
+IterationTime            520.013204
+TimeSinceStart           108.336679
+ParamNorm           66.698715
+StepNorm            4.742050
+Sigma               0.010000
+PSigmaNorm          6.713438
+------------------------------------
+------------------------------------
+Iteration                14.000000
+EvalMeanReward           312.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          2024.538018
+EvalMaxNovelty           3002.120275
+TrainMeanReward          211.250000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2911.925000
+TrainMaxNovelty          8897.000000
+StepsSinceStart          199726.000000
+StepsThisIter            14695.000000
+IterationTime            504.836141
+TimeSinceStart           116.753136
+ParamNorm           66.820328
+StepNorm            4.049102
+Sigma               0.010000
+PSigmaNorm          6.944114
+------------------------------------
+------------------------------------
+Iteration                15.000000
+EvalMeanReward           437.500000
+EvalMaxReward            450.000000
+EvalMeanNovelty          2717.686018
+EvalMaxNovelty           3417.085682
+TrainMeanReward          148.125000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2998.825000
+TrainMaxNovelty          8694.000000
+StepsSinceStart          214026.000000
+StepsThisIter            14300.000000
+IterationTime            491.785893
+TimeSinceStart           124.951868
+ParamNorm           66.854729
+StepNorm            2.131965
+Sigma               0.010000
+PSigmaNorm          7.007306
+------------------------------------
+------------------------------------
+Iteration                16.000000
+EvalMeanReward           325.000000
+EvalMaxReward            475.000000
+EvalMeanNovelty          2236.946201
+EvalMaxNovelty           3491.852900
+TrainMeanReward          178.125000
+TrainMaxReward           525.000000
+TrainMeanNovelty         3076.600000
+TrainMaxNovelty          9046.000000
+StepsSinceStart          228123.000000
+StepsThisIter            14097.000000
+IterationTime            477.606932
+TimeSinceStart           132.914378
+ParamNorm           66.968292
+StepNorm            3.930612
+Sigma               0.010000
+PSigmaNorm          7.216784
+------------------------------------
+------------------------------------
+Iteration                17.000000
+EvalMeanReward           425.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2151.554179
+EvalMaxNovelty           2285.282298
+TrainMeanReward          261.875000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2880.475000
+TrainMaxNovelty          7455.000000
+StepsSinceStart          243142.000000
+StepsThisIter            15019.000000
+IterationTime            535.901918
+TimeSinceStart           141.848580
+ParamNorm           67.023552
+StepNorm            2.715915
+Sigma               0.010000
+PSigmaNorm          7.314640
+------------------------------------
+------------------------------------
+Iteration                18.000000
+EvalMeanReward           200.000000
+EvalMaxReward            200.000000
+EvalMeanNovelty          505.640801
+EvalMaxNovelty           505.641054
+TrainMeanReward          216.875000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3190.900000
+TrainMaxNovelty          8718.000000
+StepsSinceStart          257675.000000
+StepsThisIter            14533.000000
+IterationTime            485.552196
+TimeSinceStart           149.943239
+ParamNorm           67.078690
+StepNorm            2.705222
+Sigma               0.010000
+PSigmaNorm          7.409996
+------------------------------------
+------------------------------------
+Iteration                19.000000
+EvalMeanReward           112.500000
+EvalMaxReward            175.000000
+EvalMeanNovelty          3334.375890
+EvalMaxNovelty           4021.415161
+TrainMeanReward          267.500000
+TrainMaxReward           575.000000
+TrainMeanNovelty         2966.700000
+TrainMaxNovelty          9568.000000
+StepsSinceStart          272675.000000
+StepsThisIter            15000.000000
+IterationTime            507.708035
+TimeSinceStart           158.407367
+ParamNorm           67.191483
+StepNorm            3.860102
+Sigma               0.010000
+PSigmaNorm          7.604281
+------------------------------------
+------------------------------------
+Iteration                20.000000
+EvalMeanReward           150.000000
+EvalMaxReward            200.000000
+EvalMeanNovelty          4447.639494
+EvalMaxNovelty           4987.200161
+TrainMeanReward          175.625000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3238.675000
+TrainMaxNovelty          9212.000000
+StepsSinceStart          286795.000000
+StepsThisIter            14120.000000
+IterationTime            476.012893
+TimeSinceStart           166.343296
+ParamNorm           67.235245
+StepNorm            2.398969
+Sigma               0.010000
+PSigmaNorm          7.678340
+------------------------------------
+------------------------------------
+Iteration                21.000000
+EvalMeanReward           312.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          6120.087246
+EvalMaxNovelty           9955.039823
+TrainMeanReward          158.125000
+TrainMaxReward           625.000000
+TrainMeanNovelty         3675.000000
+TrainMaxNovelty          9185.000000
+StepsSinceStart          300966.000000
+StepsThisIter            14171.000000
+IterationTime            502.464638
+TimeSinceStart           174.720195
+ParamNorm           67.328766
+StepNorm            3.582763
+Sigma               0.010000
+PSigmaNorm          7.836744
+------------------------------------
+------------------------------------
+Iteration                22.000000
+EvalMeanReward           487.500000
+EvalMaxReward            550.000000
+EvalMeanNovelty          4363.974843
+EvalMaxNovelty           7941.579849
+TrainMeanReward          234.375000
+TrainMaxReward           650.000000
+TrainMeanNovelty         3623.350000
+TrainMaxNovelty          11087.000000
+StepsSinceStart          315858.000000
+StepsThisIter            14892.000000
+IterationTime            530.157678
+TimeSinceStart           183.558695
+ParamNorm           67.443474
+StepNorm            4.009397
+Sigma               0.010000
+PSigmaNorm          8.033057
+------------------------------------
+------------------------------------
+Iteration                23.000000
+EvalMeanReward           262.500000
+EvalMaxReward            400.000000
+EvalMeanNovelty          2786.425967
+EvalMaxNovelty           2875.302188
+TrainMeanReward          184.375000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2681.325000
+TrainMaxNovelty          7223.000000
+StepsSinceStart          329756.000000
+StepsThisIter            13898.000000
+IterationTime            467.274213
+TimeSinceStart           191.349025
+ParamNorm           67.579277
+StepNorm            4.389126
+Sigma               0.010000
+PSigmaNorm          8.260754
+------------------------------------
+------------------------------------
+Iteration                24.000000
+EvalMeanReward           350.000000
+EvalMaxReward            600.000000
+EvalMeanNovelty          3826.727045
+EvalMaxNovelty           4944.401893
+TrainMeanReward          218.125000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3692.750000
+TrainMaxNovelty          8300.000000
+StepsSinceStart          344803.000000
+StepsThisIter            15047.000000
+IterationTime            519.397216
+TimeSinceStart           200.008077
+ParamNorm           67.782303
+StepNorm            5.231927
+Sigma               0.010000
+PSigmaNorm          8.576131
+------------------------------------
+------------------------------------
+Iteration                25.000000
+EvalMeanReward           312.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          3336.601060
+EvalMaxNovelty           3471.474063
+TrainMeanReward          205.625000
+TrainMaxReward           500.000000
+TrainMeanNovelty         3013.800000
+TrainMaxNovelty          8859.000000
+StepsSinceStart          359949.000000
+StepsThisIter            15146.000000
+IterationTime            558.820278
+TimeSinceStart           209.324463
+ParamNorm           67.912727
+StepNorm            4.199615
+Sigma               0.010000
+PSigmaNorm          8.773228
+------------------------------------
+------------------------------------
+Iteration                26.000000
+EvalMeanReward           525.000000
+EvalMaxReward            600.000000
+EvalMeanNovelty          1211.035201
+EvalMaxNovelty           1898.483383
+TrainMeanReward          181.875000
+TrainMaxReward           650.000000
+TrainMeanNovelty         2470.525000
+TrainMaxNovelty          8854.000000
+StepsSinceStart          373950.000000
+StepsThisIter            14001.000000
+IterationTime            455.942575
+TimeSinceStart           216.925860
+ParamNorm           68.009186
+StepNorm            3.631810
+Sigma               0.010000
+PSigmaNorm          8.917602
+------------------------------------
+------------------------------------
+Iteration                27.000000
+EvalMeanReward           337.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          3765.324605
+EvalMaxNovelty           6788.862965
+TrainMeanReward          168.750000
+TrainMaxReward           550.000000
+TrainMeanNovelty         2818.625000
+TrainMaxNovelty          7021.000000
+StepsSinceStart          388221.000000
+StepsThisIter            14271.000000
+IterationTime            494.794100
+TimeSinceStart           225.174814
+ParamNorm           68.083916
+StepNorm            3.171973
+Sigma               0.010000
+PSigmaNorm          9.026658
+------------------------------------
+------------------------------------
+Iteration                28.000000
+EvalMeanReward           325.000000
+EvalMaxReward            325.000000
+EvalMeanNovelty          1057.812623
+EvalMaxNovelty           1058.242615
+TrainMeanReward          210.625000
+TrainMaxReward           1050.000000
+TrainMeanNovelty         3568.925000
+TrainMaxNovelty          9410.000000
+StepsSinceStart          402557.000000
+StepsThisIter            14336.000000
+IterationTime            491.802606
+TimeSinceStart           233.373802
+ParamNorm           68.129456
+StepNorm            2.529422
+Sigma               0.010000
+PSigmaNorm          9.095659
+------------------------------------
+------------------------------------
+Iteration                29.000000
+EvalMeanReward           350.000000
+EvalMaxReward            475.000000
+EvalMeanNovelty          2014.899122
+EvalMaxNovelty           3003.237043
+TrainMeanReward          196.250000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2908.775000
+TrainMaxNovelty          8721.000000
+StepsSinceStart          417681.000000
+StepsThisIter            15124.000000
+IterationTime            541.751135
+TimeSinceStart           242.405448
+ParamNorm           68.173714
+StepNorm            2.507114
+Sigma               0.010000
+PSigmaNorm          9.161401
+------------------------------------
+------------------------------------
+Iteration                30.000000
+EvalMeanReward           200.000000
+EvalMaxReward            225.000000
+EvalMeanNovelty          2524.101436
+EvalMaxNovelty           4011.585482
+TrainMeanReward          183.125000
+TrainMaxReward           525.000000
+TrainMeanNovelty         3783.750000
+TrainMaxNovelty          10275.000000
+StepsSinceStart          432409.000000
+StepsThisIter            14728.000000
+IterationTime            511.189252
+TimeSinceStart           250.927625
+ParamNorm           68.271255
+StepNorm            3.557117
+Sigma               0.010000
+PSigmaNorm          9.294923
+------------------------------------
+------------------------------------
+Iteration                31.000000
+EvalMeanReward           425.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          1050.593785
+EvalMaxNovelty           1050.748672
+TrainMeanReward          201.875000
+TrainMaxReward           575.000000
+TrainMeanNovelty         2779.050000
+TrainMaxNovelty          10968.000000
+StepsSinceStart          447062.000000
+StepsThisIter            14653.000000
+IterationTime            510.663035
+TimeSinceStart           259.440896
+ParamNorm           68.323097
+StepNorm            2.709398
+Sigma               0.010000
+PSigmaNorm          9.370093
+------------------------------------
+------------------------------------
+Iteration                32.000000
+EvalMeanReward           462.500000
+EvalMaxReward            500.000000
+EvalMeanNovelty          808.149559
+EvalMaxNovelty           933.846623
+TrainMeanReward          183.125000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2259.500000
+TrainMaxNovelty          7317.000000
+StepsSinceStart          461980.000000
+StepsThisIter            14918.000000
+IterationTime            505.997433
+TimeSinceStart           267.876629
+ParamNorm           68.371529
+StepNorm            2.446863
+Sigma               0.010000
+PSigmaNorm          9.433073
+------------------------------------
+------------------------------------
+Iteration                33.000000
+EvalMeanReward           425.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          334.566169
+EvalMaxNovelty           335.165850
+TrainMeanReward          206.875000
+TrainMaxReward           550.000000
+TrainMeanNovelty         2947.450000
+TrainMaxNovelty          8822.000000
+StepsSinceStart          476384.000000
+StepsThisIter            14404.000000
+IterationTime            508.489963
+TimeSinceStart           276.353759
+ParamNorm           68.534073
+StepNorm            4.766930
+Sigma               0.009999
+PSigmaNorm          9.660759
+------------------------------------
+------------------------------------
+Iteration                34.000000
+EvalMeanReward           287.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          5518.026019
+EvalMaxNovelty           6885.541929
+TrainMeanReward          168.750000
+TrainMaxReward           750.000000
+TrainMeanNovelty         2812.550000
+TrainMaxNovelty          8924.000000
+StepsSinceStart          490490.000000
+StepsThisIter            14106.000000
+IterationTime            476.585789
+TimeSinceStart           284.299081
+ParamNorm           68.555984
+StepNorm            1.674190
+Sigma               0.009999
+PSigmaNorm          9.689486
+------------------------------------
+------------------------------------
+Iteration                35.000000
+EvalMeanReward           462.500000
+EvalMaxReward            500.000000
+EvalMeanNovelty          2547.752400
+EvalMaxNovelty           4151.505604
+TrainMeanReward          220.625000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3191.425000
+TrainMaxNovelty          8632.000000
+StepsSinceStart          505389.000000
+StepsThisIter            14899.000000
+IterationTime            513.273781
+TimeSinceStart           292.856116
+ParamNorm           68.608139
+StepNorm            2.742693
+Sigma               0.009999
+PSigmaNorm          9.763883
+------------------------------------
+------------------------------------
+Iteration                36.000000
+EvalMeanReward           287.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2391.712674
+EvalMaxNovelty           4155.179246
+TrainMeanReward          208.750000
+TrainMaxReward           550.000000
+TrainMeanNovelty         2369.200000
+TrainMaxNovelty          9239.000000
+StepsSinceStart          520212.000000
+StepsThisIter            14823.000000
+IterationTime            522.506815
+TimeSinceStart           301.566710
+ParamNorm           68.673676
+StepNorm            2.941260
+Sigma               0.009999
+PSigmaNorm          9.849060
+------------------------------------
+------------------------------------
+Iteration                37.000000
+EvalMeanReward           312.500000
+EvalMaxReward            450.000000
+EvalMeanNovelty          2267.152318
+EvalMaxNovelty           2456.304899
+TrainMeanReward          206.875000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3276.175000
+TrainMaxNovelty          10215.000000
+StepsSinceStart          535418.000000
+StepsThisIter            15206.000000
+IterationTime            534.233015
+TimeSinceStart           310.472872
+ParamNorm           68.732651
+StepNorm            2.898262
+Sigma               0.009999
+PSigmaNorm          9.930838
+------------------------------------
+------------------------------------
+Iteration                38.000000
+EvalMeanReward           312.500000
+EvalMaxReward            450.000000
+EvalMeanNovelty          3211.434582
+EvalMaxNovelty           4344.655985
+TrainMeanReward          210.000000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3551.900000
+TrainMaxNovelty          10939.000000
+StepsSinceStart          550304.000000
+StepsThisIter            14886.000000
+IterationTime            532.888198
+TimeSinceStart           319.357097
+ParamNorm           68.799713
+StepNorm            3.059091
+Sigma               0.009999
+PSigmaNorm          10.020689
+------------------------------------
+------------------------------------
+Iteration                39.000000
+EvalMeanReward           337.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          2023.562693
+EvalMaxNovelty           3501.721536
+TrainMeanReward          279.375000
+TrainMaxReward           1075.000000
+TrainMeanNovelty         3072.800000
+TrainMaxNovelty          8942.000000
+StepsSinceStart          565805.000000
+StepsThisIter            15501.000000
+IterationTime            554.270337
+TimeSinceStart           328.597261
+ParamNorm           68.985840
+StepNorm            5.051468
+Sigma               0.009999
+PSigmaNorm          10.267682
+------------------------------------
+------------------------------------
+Iteration                40.000000
+EvalMeanReward           337.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          4635.184122
+EvalMaxNovelty           8724.967425
+TrainMeanReward          257.500000
+TrainMaxReward           700.000000
+TrainMeanNovelty         2870.875000
+TrainMaxNovelty          9369.000000
+StepsSinceStart          580331.000000
+StepsThisIter            14526.000000
+IterationTime            509.944322
+TimeSinceStart           337.098820
+ParamNorm           69.103470
+StepNorm            4.062556
+Sigma               0.009999
+PSigmaNorm          10.422411
+------------------------------------
+------------------------------------
+Iteration                41.000000
+EvalMeanReward           450.000000
+EvalMaxReward            450.000000
+EvalMeanNovelty          4201.787274
+EvalMaxNovelty           4209.205413
+TrainMeanReward          209.375000
+TrainMaxReward           625.000000
+TrainMeanNovelty         3598.425000
+TrainMaxNovelty          9203.000000
+StepsSinceStart          595215.000000
+StepsThisIter            14884.000000
+IterationTime            554.431904
+TimeSinceStart           346.342360
+ParamNorm           69.165611
+StepNorm            3.001870
+Sigma               0.009999
+PSigmaNorm          10.505474
+------------------------------------
+------------------------------------
+Iteration                42.000000
+EvalMeanReward           425.000000
+EvalMaxReward            450.000000
+EvalMeanNovelty          5075.928533
+EvalMaxNovelty           5966.905967
+TrainMeanReward          208.750000
+TrainMaxReward           1075.000000
+TrainMeanNovelty         3744.075000
+TrainMaxNovelty          9660.000000
+StepsSinceStart          610030.000000
+StepsThisIter            14815.000000
+IterationTime            536.610313
+TimeSinceStart           355.288355
+ParamNorm           69.255875
+StepNorm            3.578917
+Sigma               0.009999
+PSigmaNorm          10.623088
+------------------------------------
+------------------------------------
+Iteration                43.000000
+EvalMeanReward           287.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          3493.465240
+EvalMaxNovelty           3840.067090
+TrainMeanReward          188.125000
+TrainMaxReward           500.000000
+TrainMeanNovelty         3092.700000
+TrainMaxNovelty          8407.000000
+StepsSinceStart          625121.000000
+StepsThisIter            15091.000000
+IterationTime            520.568200
+TimeSinceStart           363.967026
+ParamNorm           69.362114
+StepNorm            3.886781
+Sigma               0.009999
+PSigmaNorm          10.759490
+------------------------------------
+------------------------------------
+Iteration                44.000000
+EvalMeanReward           525.000000
+EvalMaxReward            525.000000
+EvalMeanNovelty          513.754685
+EvalMaxNovelty           513.754686
+TrainMeanReward          240.000000
+TrainMaxReward           625.000000
+TrainMeanNovelty         3404.575000
+TrainMaxNovelty          8931.000000
+StepsSinceStart          640214.000000
+StepsThisIter            15093.000000
+IterationTime            531.801635
+TimeSinceStart           372.832609
+ParamNorm           69.545921
+StepNorm            5.136062
+Sigma               0.009999
+PSigmaNorm          10.993048
+------------------------------------
+------------------------------------
+Iteration                45.000000
+EvalMeanReward           462.500000
+EvalMaxReward            500.000000
+EvalMeanNovelty          3877.585575
+EvalMaxNovelty           6860.375222
+TrainMeanReward          258.750000
+TrainMaxReward           650.000000
+TrainMeanNovelty         2441.800000
+TrainMaxNovelty          7270.000000
+StepsSinceStart          656127.000000
+StepsThisIter            15913.000000
+IterationTime            556.098787
+TimeSinceStart           382.103248
+ParamNorm           69.803200
+StepNorm            6.036018
+Sigma               0.009999
+PSigmaNorm          11.310357
+------------------------------------
+------------------------------------
+Iteration                46.000000
+EvalMeanReward           437.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          1517.646977
+EvalMaxNovelty           2041.449729
+TrainMeanReward          231.250000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3218.400000
+TrainMaxNovelty          9101.000000
+StepsSinceStart          670580.000000
+StepsThisIter            14453.000000
+IterationTime            503.027984
+TimeSinceStart           390.489676
+ParamNorm           69.898743
+StepNorm            3.645225
+Sigma               0.009999
+PSigmaNorm          11.423702
+------------------------------------
+------------------------------------
+Iteration                47.000000
+EvalMeanReward           512.500000
+EvalMaxReward            525.000000
+EvalMeanNovelty          3979.146710
+EvalMaxNovelty           5216.782284
+TrainMeanReward          212.500000
+TrainMaxReward           575.000000
+TrainMeanNovelty         3493.550000
+TrainMaxNovelty          7901.000000
+StepsSinceStart          685700.000000
+StepsThisIter            15120.000000
+IterationTime            508.500959
+TimeSinceStart           398.966971
+ParamNorm           69.992828
+StepNorm            3.585121
+Sigma               0.009999
+PSigmaNorm          11.534562
+------------------------------------
+------------------------------------
+Iteration                48.000000
+EvalMeanReward           450.000000
+EvalMaxReward            475.000000
+EvalMeanNovelty          5257.538634
+EvalMaxNovelty           6022.895637
+TrainMeanReward          246.250000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2568.225000
+TrainMaxNovelty          9291.000000
+StepsSinceStart          700429.000000
+StepsThisIter            14729.000000
+IterationTime            498.680541
+TimeSinceStart           407.280587
+ParamNorm           70.065811
+StepNorm            3.186502
+Sigma               0.009999
+PSigmaNorm          11.619058
+------------------------------------
+------------------------------------
+Iteration                49.000000
+EvalMeanReward           287.500000
+EvalMaxReward            500.000000
+EvalMeanNovelty          2109.467400
+EvalMaxNovelty           3140.022091
+TrainMeanReward          250.625000
+TrainMaxReward           1075.000000
+TrainMeanNovelty         3360.850000
+TrainMaxNovelty          8524.000000
+StepsSinceStart          716060.000000
+StepsThisIter            15631.000000
+IterationTime            558.934771
+TimeSinceStart           416.598375
+ParamNorm           70.351822
+StepNorm            6.370256
+Sigma               0.009999
+PSigmaNorm          11.953580
+------------------------------------
+------------------------------------
+Iteration                50.000000
+EvalMeanReward           350.000000
+EvalMaxReward            500.000000
+EvalMeanNovelty          1578.687390
+EvalMaxNovelty           2745.187290
+TrainMeanReward          198.125000
+TrainMaxReward           650.000000
+TrainMeanNovelty         2715.000000
+TrainMaxNovelty          9322.000000
+StepsSinceStart          731884.000000
+StepsThisIter            15824.000000
+IterationTime            566.985822
+TimeSinceStart           426.050428
+ParamNorm           70.430977
+StepNorm            3.356542
+Sigma               0.009999
+PSigmaNorm          12.045123
+------------------------------------
+------------------------------------
+Iteration                51.000000
+EvalMeanReward           150.000000
+EvalMaxReward            250.000000
+EvalMeanNovelty          4007.729624
+EvalMaxNovelty           4358.270510
+TrainMeanReward          230.000000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3137.500000
+TrainMaxNovelty          6929.000000
+StepsSinceStart          746780.000000
+StepsThisIter            14896.000000
+IterationTime            501.841308
+TimeSinceStart           434.416619
+ParamNorm           70.486191
+StepNorm            2.849993
+Sigma               0.009999
+PSigmaNorm          12.110323
+------------------------------------
+------------------------------------
+Iteration                52.000000
+EvalMeanReward           412.500000
+EvalMaxReward            450.000000
+EvalMeanNovelty          1106.705810
+EvalMaxNovelty           1887.708080
+TrainMeanReward          196.250000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3176.900000
+TrainMaxNovelty          8218.000000
+StepsSinceStart          761893.000000
+StepsThisIter            15113.000000
+IterationTime            532.869525
+TimeSinceStart           443.299515
+ParamNorm           70.557190
+StepNorm            3.174637
+Sigma               0.009999
+PSigmaNorm          12.191078
+------------------------------------
+------------------------------------
+Iteration                53.000000
+EvalMeanReward           400.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          1119.899815
+EvalMaxNovelty           1887.711967
+TrainMeanReward          179.375000
+TrainMaxReward           650.000000
+TrainMeanNovelty         2956.000000
+TrainMaxNovelty          8949.000000
+StepsSinceStart          776680.000000
+StepsThisIter            14787.000000
+IterationTime            505.924365
+TimeSinceStart           451.737055
+ParamNorm           70.711502
+StepNorm            4.618168
+Sigma               0.009999
+PSigmaNorm          12.360825
+------------------------------------
+------------------------------------
+Iteration                54.000000
+EvalMeanReward           250.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          3608.212852
+EvalMaxNovelty           4331.629387
+TrainMeanReward          267.500000
+TrainMaxReward           675.000000
+TrainMeanNovelty         3525.625000
+TrainMaxNovelty          9188.000000
+StepsSinceStart          791694.000000
+StepsThisIter            15014.000000
+IterationTime            504.189498
+TimeSinceStart           460.142456
+ParamNorm           70.853111
+StepNorm            4.476750
+Sigma               0.009999
+PSigmaNorm          12.516495
+------------------------------------
+------------------------------------
+Iteration                55.000000
+EvalMeanReward           237.500000
+EvalMaxReward            400.000000
+EvalMeanNovelty          3167.902457
+EvalMaxNovelty           3209.166339
+TrainMeanReward          211.250000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3579.300000
+TrainMaxNovelty          9770.000000
+StepsSinceStart          806395.000000
+StepsThisIter            14701.000000
+IterationTime            488.350825
+TimeSinceStart           468.284003
+ParamNorm           70.892090
+StepNorm            2.354881
+Sigma               0.009999
+PSigmaNorm          12.558300
+------------------------------------
+------------------------------------
+Iteration                56.000000
+EvalMeanReward           425.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2262.657265
+EvalMaxNovelty           3120.662336
+TrainMeanReward          253.750000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3684.250000
+TrainMaxNovelty          10422.000000
+StepsSinceStart          821890.000000
+StepsThisIter            15495.000000
+IterationTime            568.213403
+TimeSinceStart           477.756360
+ParamNorm           70.991631
+StepNorm            3.773759
+Sigma               0.009999
+PSigmaNorm          12.669883
+------------------------------------
+------------------------------------
+Iteration                57.000000
+EvalMeanReward           50.000000
+EvalMaxReward            50.000000
+EvalMeanNovelty          2801.351480
+EvalMaxNovelty           2802.654639
+TrainMeanReward          250.625000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2830.275000
+TrainMaxNovelty          8910.000000
+StepsSinceStart          837172.000000
+StepsThisIter            15282.000000
+IterationTime            541.196552
+TimeSinceStart           486.778477
+ParamNorm           71.122505
+StepNorm            4.314377
+Sigma               0.009999
+PSigmaNorm          12.810690
+------------------------------------
+------------------------------------
+Iteration                58.000000
+EvalMeanReward           112.500000
+EvalMaxReward            150.000000
+EvalMeanNovelty          2361.007055
+EvalMaxNovelty           3622.360443
+TrainMeanReward          211.875000
+TrainMaxReward           575.000000
+TrainMeanNovelty         2753.850000
+TrainMaxNovelty          10068.000000
+StepsSinceStart          851550.000000
+StepsThisIter            14378.000000
+IterationTime            479.658315
+TimeSinceStart           494.775147
+ParamNorm           71.153542
+StepNorm            2.087470
+Sigma               0.009999
+PSigmaNorm          12.843414
+------------------------------------
+------------------------------------
+Iteration                59.000000
+EvalMeanReward           137.500000
+EvalMaxReward            200.000000
+EvalMeanNovelty          2697.947456
+EvalMaxNovelty           3629.610948
+TrainMeanReward          188.750000
+TrainMaxReward           550.000000
+TrainMeanNovelty         3433.250000
+TrainMaxNovelty          10463.000000
+StepsSinceStart          865314.000000
+StepsThisIter            13764.000000
+IterationTime            484.543875
+TimeSinceStart           502.852962
+ParamNorm           71.181992
+StepNorm            2.035375
+Sigma               0.009999
+PSigmaNorm          12.874342
+------------------------------------
+------------------------------------
+Iteration                60.000000
+EvalMeanReward           175.000000
+EvalMaxReward            175.000000
+EvalMeanNovelty          2576.124796
+EvalMaxNovelty           2576.792656
+TrainMeanReward          209.375000
+TrainMaxReward           625.000000
+TrainMeanNovelty         3210.025000
+TrainMaxNovelty          8312.000000
+StepsSinceStart          880454.000000
+StepsThisIter            15140.000000
+IterationTime            527.018722
+TimeSinceStart           511.639035
+ParamNorm           71.224762
+StepNorm            2.436614
+Sigma               0.009999
+PSigmaNorm          12.919397
+------------------------------------
+------------------------------------
+Iteration                61.000000
+EvalMeanReward           100.000000
+EvalMaxReward            125.000000
+EvalMeanNovelty          3243.534646
+EvalMaxNovelty           3628.508095
+TrainMeanReward          215.625000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3196.275000
+TrainMaxNovelty          8366.000000
+StepsSinceStart          895585.000000
+StepsThisIter            15131.000000
+IterationTime            524.414134
+TimeSinceStart           520.381497
+ParamNorm           71.272942
+StepNorm            2.624118
+Sigma               0.009999
+PSigmaNorm          12.971650
+------------------------------------
+------------------------------------
+Iteration                62.000000
+EvalMeanReward           150.000000
+EvalMaxReward            150.000000
+EvalMeanNovelty          576.555957
+EvalMaxNovelty           578.135953
+TrainMeanReward          218.750000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3152.050000
+TrainMaxNovelty          8392.000000
+StepsSinceStart          909613.000000
+StepsThisIter            14028.000000
+IterationTime            507.279146
+TimeSinceStart           528.838627
+ParamNorm           71.374306
+StepNorm            3.811450
+Sigma               0.009999
+PSigmaNorm          13.079856
+------------------------------------
+------------------------------------
+Iteration                63.000000
+EvalMeanReward           75.000000
+EvalMaxReward            75.000000
+EvalMeanNovelty          1689.281150
+EvalMaxNovelty           2734.147336
+TrainMeanReward          195.625000
+TrainMaxReward           525.000000
+TrainMeanNovelty         2928.650000
+TrainMaxNovelty          7757.000000
+StepsSinceStart          924069.000000
+StepsThisIter            14456.000000
+IterationTime            513.541845
+TimeSinceStart           537.400010
+ParamNorm           71.440613
+StepNorm            3.003603
+Sigma               0.009999
+PSigmaNorm          13.147344
+------------------------------------
+------------------------------------
+Iteration                64.000000
+EvalMeanReward           250.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2276.331642
+EvalMaxNovelty           3908.379265
+TrainMeanReward          275.625000
+TrainMaxReward           650.000000
+TrainMeanNovelty         2622.875000
+TrainMaxNovelty          9289.000000
+StepsSinceStart          939652.000000
+StepsThisIter            15583.000000
+IterationTime            528.875437
+TimeSinceStart           546.216784
+ParamNorm           71.548477
+StepNorm            3.868625
+Sigma               0.009999
+PSigmaNorm          13.256475
+------------------------------------
+------------------------------------
+Iteration                65.000000
+EvalMeanReward           75.000000
+EvalMaxReward            75.000000
+EvalMeanNovelty          644.198567
+EvalMaxNovelty           644.436908
+TrainMeanReward          236.250000
+TrainMaxReward           625.000000
+TrainMeanNovelty         3431.575000
+TrainMaxNovelty          9948.000000
+StepsSinceStart          954242.000000
+StepsThisIter            14590.000000
+IterationTime            505.306241
+TimeSinceStart           554.640719
+ParamNorm           71.619514
+StepNorm            3.196659
+Sigma               0.009999
+PSigmaNorm          13.332426
+------------------------------------
+------------------------------------
+Iteration                66.000000
+EvalMeanReward           225.000000
+EvalMaxReward            375.000000
+EvalMeanNovelty          1084.287499
+EvalMaxNovelty           1524.152210
+TrainMeanReward          234.375000
+TrainMaxReward           725.000000
+TrainMeanNovelty         2814.800000
+TrainMaxNovelty          9238.000000
+StepsSinceStart          969688.000000
+StepsThisIter            15446.000000
+IterationTime            536.371501
+TimeSinceStart           563.582470
+ParamNorm           71.719475
+StepNorm            3.816827
+Sigma               0.009999
+PSigmaNorm          13.437386
+------------------------------------
+------------------------------------
+Iteration                67.000000
+EvalMeanReward           250.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2257.873473
+EvalMaxNovelty           3808.762321
+TrainMeanReward          209.375000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2600.075000
+TrainMaxNovelty          9142.000000
+StepsSinceStart          983719.000000
+StepsThisIter            14031.000000
+IterationTime            522.972515
+TimeSinceStart           572.301081
+ParamNorm           71.800873
+StepNorm            3.351823
+Sigma               0.009999
+PSigmaNorm          13.519089
+------------------------------------
+------------------------------------
+Iteration                68.000000
+EvalMeanReward           50.000000
+EvalMaxReward            50.000000
+EvalMeanNovelty          3965.828002
+EvalMaxNovelty           4684.751937
+TrainMeanReward          230.625000
+TrainMaxReward           575.000000
+TrainMeanNovelty         3111.475000
+TrainMaxNovelty          8289.000000
+StepsSinceStart          998822.000000
+StepsThisIter            15103.000000
+IterationTime            576.226353
+TimeSinceStart           581.906869
+ParamNorm           71.970871
+StepNorm            4.880245
+Sigma               0.009999
+PSigmaNorm          13.691749
+------------------------------------
+------------------------------------
+Iteration                69.000000
+EvalMeanReward           125.000000
+EvalMaxReward            125.000000
+EvalMeanNovelty          3333.867524
+EvalMaxNovelty           6138.046908
+TrainMeanReward          191.875000
+TrainMaxReward           575.000000
+TrainMeanNovelty         2656.075000
+TrainMaxNovelty          8244.000000
+StepsSinceStart          1013252.000000
+StepsThisIter            14430.000000
+IterationTime            511.285372
+TimeSinceStart           590.430312
+ParamNorm           72.001266
+StepNorm            2.194922
+Sigma               0.009999
+PSigmaNorm          13.725704
+------------------------------------
+------------------------------------
+Iteration                70.000000
+EvalMeanReward           250.000000
+EvalMaxReward            375.000000
+EvalMeanNovelty          1900.906675
+EvalMaxNovelty           3409.073716
+TrainMeanReward          250.000000
+TrainMaxReward           1225.000000
+TrainMeanNovelty         2946.150000
+TrainMaxNovelty          8402.000000
+StepsSinceStart          1028566.000000
+StepsThisIter            15314.000000
+IterationTime            551.174510
+TimeSinceStart           599.619407
+ParamNorm           72.085335
+StepNorm            3.443280
+Sigma               0.009999
+PSigmaNorm          13.809220
+------------------------------------
+------------------------------------
+Iteration                71.000000
+EvalMeanReward           262.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          3330.905233
+EvalMaxNovelty           5491.269139
+TrainMeanReward          241.875000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2861.125000
+TrainMaxNovelty          9162.000000
+StepsSinceStart          1043645.000000
+StepsThisIter            15079.000000
+IterationTime            529.809774
+TimeSinceStart           608.452240
+ParamNorm           72.172646
+StepNorm            3.454221
+Sigma               0.009999
+PSigmaNorm          13.893794
+------------------------------------
+------------------------------------
+Iteration                72.000000
+EvalMeanReward           87.500000
+EvalMaxReward            125.000000
+EvalMeanNovelty          2043.337571
+EvalMaxNovelty           3028.782889
+TrainMeanReward          209.375000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3023.900000
+TrainMaxNovelty          7135.000000
+StepsSinceStart          1058122.000000
+StepsThisIter            14477.000000
+IterationTime            511.639954
+TimeSinceStart           616.981852
+ParamNorm           72.366989
+StepNorm            5.242258
+Sigma               0.009999
+PSigmaNorm          14.085867
+------------------------------------
+------------------------------------
+Iteration                73.000000
+EvalMeanReward           100.000000
+EvalMaxReward            125.000000
+EvalMeanNovelty          1901.604278
+EvalMaxNovelty           3476.240411
+TrainMeanReward          264.375000
+TrainMaxReward           1075.000000
+TrainMeanNovelty         2788.450000
+TrainMaxNovelty          7735.000000
+StepsSinceStart          1073599.000000
+StepsThisIter            15477.000000
+IterationTime            588.773805
+TimeSinceStart           626.796922
+ParamNorm           72.393784
+StepNorm            1.926344
+Sigma               0.009999
+PSigmaNorm          14.111676
+------------------------------------
+------------------------------------
+Iteration                74.000000
+EvalMeanReward           75.000000
+EvalMaxReward            75.000000
+EvalMeanNovelty          326.944039
+EvalMaxNovelty           326.947591
+TrainMeanReward          198.750000
+TrainMaxReward           550.000000
+TrainMeanNovelty         3358.575000
+TrainMaxNovelty          9201.000000
+StepsSinceStart          1087983.000000
+StepsThisIter            14384.000000
+IterationTime            521.013925
+TimeSinceStart           635.482761
+ParamNorm           72.504936
+StepNorm            3.892013
+Sigma               0.009999
+PSigmaNorm          14.214758
+------------------------------------
+------------------------------------
+Iteration                75.000000
+EvalMeanReward           50.000000
+EvalMaxReward            50.000000
+EvalMeanNovelty          1753.747663
+EvalMaxNovelty           2685.677888
+TrainMeanReward          234.375000
+TrainMaxReward           650.000000
+TrainMeanNovelty         3567.375000
+TrainMaxNovelty          10230.000000
+StepsSinceStart          1103169.000000
+StepsThisIter            15186.000000
+IterationTime            523.896130
+TimeSinceStart           644.216460
+ParamNorm           72.709717
+StepNorm            5.419742
+Sigma               0.009999
+PSigmaNorm          14.416077
+------------------------------------
+------------------------------------
+Iteration                76.000000
+EvalMeanReward           75.000000
+EvalMaxReward            75.000000
+EvalMeanNovelty          3127.094384
+EvalMaxNovelty           3303.700753
+TrainMeanReward          237.500000
+TrainMaxReward           1025.000000
+TrainMeanNovelty         2691.775000
+TrainMaxNovelty          7769.000000
+StepsSinceStart          1117930.000000
+StepsThisIter            14761.000000
+IterationTime            527.874053
+TimeSinceStart           653.016892
+ParamNorm           72.721077
+StepNorm            1.352894
+Sigma               0.009999
+PSigmaNorm          14.428332
+------------------------------------
+------------------------------------
+Iteration                77.000000
+EvalMeanReward           75.000000
+EvalMaxReward            75.000000
+EvalMeanNovelty          661.040168
+EvalMaxNovelty           681.623490
+TrainMeanReward          260.625000
+TrainMaxReward           650.000000
+TrainMeanNovelty         3522.800000
+TrainMaxNovelty          7583.000000
+StepsSinceStart          1132640.000000
+StepsThisIter            14710.000000
+IterationTime            527.774036
+TimeSinceStart           661.815938
+ParamNorm           72.763458
+StepNorm            2.557125
+Sigma               0.009999
+PSigmaNorm          14.471907
+------------------------------------
+------------------------------------
+Iteration                78.000000
+EvalMeanReward           137.500000
+EvalMaxReward            150.000000
+EvalMeanNovelty          1601.918832
+EvalMaxNovelty           1775.429952
+TrainMeanReward          190.000000
+TrainMaxReward           500.000000
+TrainMeanNovelty         2742.575000
+TrainMaxNovelty          7639.000000
+StepsSinceStart          1146984.000000
+StepsThisIter            14344.000000
+IterationTime            493.100583
+TimeSinceStart           670.036855
+ParamNorm           72.911674
+StepNorm            4.632413
+Sigma               0.009999
+PSigmaNorm          14.615038
+------------------------------------
+------------------------------------
+Iteration                79.000000
+EvalMeanReward           125.000000
+EvalMaxReward            125.000000
+EvalMeanNovelty          3396.940238
+EvalMaxNovelty           6314.161496
+TrainMeanReward          251.250000
+TrainMaxReward           750.000000
+TrainMeanNovelty         2922.725000
+TrainMaxNovelty          8554.000000
+StepsSinceStart          1161780.000000
+StepsThisIter            14796.000000
+IterationTime            522.572733
+TimeSinceStart           678.748811
+ParamNorm           72.963097
+StepNorm            2.765368
+Sigma               0.009999
+PSigmaNorm          14.664831
+------------------------------------
+------------------------------------
+Iteration                80.000000
+EvalMeanReward           125.000000
+EvalMaxReward            125.000000
+EvalMeanNovelty          1988.008992
+EvalMaxNovelty           3398.289524
+TrainMeanReward          223.125000
+TrainMaxReward           675.000000
+TrainMeanNovelty         3242.700000
+TrainMaxNovelty          8401.000000
+StepsSinceStart          1175971.000000
+StepsThisIter            14191.000000
+IterationTime            491.429248
+TimeSinceStart           686.941755
+ParamNorm           73.030464
+StepNorm            3.285310
+Sigma               0.009999
+PSigmaNorm          14.733853
+------------------------------------
+------------------------------------
+Iteration                81.000000
+EvalMeanReward           112.500000
+EvalMaxReward            125.000000
+EvalMeanNovelty          3519.605723
+EvalMaxNovelty           3648.198260
+TrainMeanReward          239.375000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3123.750000
+TrainMaxNovelty          11087.000000
+StepsSinceStart          1191064.000000
+StepsThisIter            15093.000000
+IterationTime            566.434455
+TimeSinceStart           696.384677
+ParamNorm           73.132431
+StepNorm            3.846296
+Sigma               0.009999
+PSigmaNorm          14.831284
+------------------------------------
+------------------------------------
+Iteration                82.000000
+EvalMeanReward           125.000000
+EvalMaxReward            125.000000
+EvalMeanNovelty          352.430318
+EvalMaxNovelty           352.470924
+TrainMeanReward          222.500000
+TrainMaxReward           775.000000
+TrainMeanNovelty         2773.150000
+TrainMaxNovelty          7349.000000
+StepsSinceStart          1205369.000000
+StepsThisIter            14305.000000
+IterationTime            499.028117
+TimeSinceStart           704.704841
+ParamNorm           73.216980
+StepNorm            3.558656
+Sigma               0.009999
+PSigmaNorm          14.913283
+------------------------------------
+------------------------------------
+Iteration                83.000000
+EvalMeanReward           62.500000
+EvalMaxReward            75.000000
+EvalMeanNovelty          1250.721977
+EvalMaxNovelty           1875.594635
+TrainMeanReward          211.250000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2714.475000
+TrainMaxNovelty          7131.000000
+StepsSinceStart          1219430.000000
+StepsThisIter            14061.000000
+IterationTime            491.624025
+TimeSinceStart           712.900725
+ParamNorm           73.297791
+StepNorm            3.353357
+Sigma               0.009999
+PSigmaNorm          14.986921
+------------------------------------
+------------------------------------
+Iteration                84.000000
+EvalMeanReward           87.500000
+EvalMaxReward            125.000000
+EvalMeanNovelty          2425.414918
+EvalMaxNovelty           4575.373683
+TrainMeanReward          196.875000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2792.850000
+TrainMaxNovelty          7789.000000
+StepsSinceStart          1233937.000000
+StepsThisIter            14507.000000
+IterationTime            508.274211
+TimeSinceStart           721.374247
+ParamNorm           73.354767
+StepNorm            2.988466
+Sigma               0.009999
+PSigmaNorm          15.042596
+------------------------------------
+------------------------------------
+Iteration                85.000000
+EvalMeanReward           125.000000
+EvalMaxReward            125.000000
+EvalMeanNovelty          6932.814396
+EvalMaxNovelty           10640.128718
+TrainMeanReward          240.000000
+TrainMaxReward           650.000000
+TrainMeanNovelty         3316.675000
+TrainMaxNovelty          9028.000000
+StepsSinceStart          1247669.000000
+StepsThisIter            13732.000000
+IterationTime            462.370414
+TimeSinceStart           729.082638
+ParamNorm           73.407654
+StepNorm            2.747700
+Sigma               0.009999
+PSigmaNorm          15.091131
+------------------------------------
+------------------------------------
+Iteration                86.000000
+EvalMeanReward           50.000000
+EvalMaxReward            50.000000
+EvalMeanNovelty          3049.405781
+EvalMaxNovelty           3050.745644
+TrainMeanReward          222.500000
+TrainMaxReward           550.000000
+TrainMeanNovelty         2652.050000
+TrainMaxNovelty          5930.000000
+StepsSinceStart          1262705.000000
+StepsThisIter            15036.000000
+IterationTime            612.657377
+TimeSinceStart           739.295707
+ParamNorm           73.564590
+StepNorm            4.864276
+Sigma               0.009999
+PSigmaNorm          15.241490
+------------------------------------
+------------------------------------
+Iteration                87.000000
+EvalMeanReward           425.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2557.685963
+EvalMaxNovelty           2719.688891
+TrainMeanReward          258.750000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2535.800000
+TrainMaxNovelty          7213.000000
+StepsSinceStart          1277170.000000
+StepsThisIter            14465.000000
+IterationTime            509.556824
+TimeSinceStart           747.790630
+ParamNorm           73.660774
+StepNorm            3.856394
+Sigma               0.009999
+PSigmaNorm          15.335133
+------------------------------------
+------------------------------------
+Iteration                88.000000
+EvalMeanReward           100.000000
+EvalMaxReward            125.000000
+EvalMeanNovelty          4042.772079
+EvalMaxNovelty           6229.575600
+TrainMeanReward          235.000000
+TrainMaxReward           625.000000
+TrainMeanNovelty         3329.125000
+TrainMaxNovelty          9549.000000
+StepsSinceStart          1292137.000000
+StepsThisIter            14967.000000
+IterationTime            565.505646
+TimeSinceStart           757.217859
+ParamNorm           73.694748
+StepNorm            2.199915
+Sigma               0.009999
+PSigmaNorm          15.366165
+------------------------------------
+------------------------------------
+Iteration                89.000000
+EvalMeanReward           75.000000
+EvalMaxReward            75.000000
+EvalMeanNovelty          3175.522988
+EvalMaxNovelty           3210.287876
+TrainMeanReward          228.125000
+TrainMaxReward           800.000000
+TrainMeanNovelty         2834.650000
+TrainMaxNovelty          10048.000000
+StepsSinceStart          1306264.000000
+StepsThisIter            14127.000000
+IterationTime            477.766405
+TimeSinceStart           765.182862
+ParamNorm           73.719269
+StepNorm            2.004960
+Sigma               0.009999
+PSigmaNorm          15.390689
+------------------------------------
+------------------------------------
+Iteration                90.000000
+EvalMeanReward           100.000000
+EvalMaxReward            125.000000
+EvalMeanNovelty          2697.224568
+EvalMaxNovelty           2833.782785
+TrainMeanReward          189.375000
+TrainMaxReward           525.000000
+TrainMeanNovelty         3262.375000
+TrainMaxNovelty          9049.000000
+StepsSinceStart          1320351.000000
+StepsThisIter            14087.000000
+IterationTime            515.717039
+TimeSinceStart           773.780534
+ParamNorm           73.834984
+StepNorm            4.128125
+Sigma               0.009999
+PSigmaNorm          15.495632
+------------------------------------
+------------------------------------
+Iteration                91.000000
+EvalMeanReward           375.000000
+EvalMaxReward            625.000000
+EvalMeanNovelty          878.406030
+EvalMaxNovelty           1414.231384
+TrainMeanReward          228.750000
+TrainMaxReward           625.000000
+TrainMeanNovelty         3070.550000
+TrainMaxNovelty          8327.000000
+StepsSinceStart          1334086.000000
+StepsThisIter            13735.000000
+IterationTime            506.842142
+TimeSinceStart           782.230104
+ParamNorm           74.014221
+StepNorm            5.210771
+Sigma               0.009999
+PSigmaNorm          15.659297
+------------------------------------
+------------------------------------
+Iteration                92.000000
+EvalMeanReward           425.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2125.010958
+EvalMaxNovelty           2791.334257
+TrainMeanReward          235.625000
+TrainMaxReward           650.000000
+TrainMeanNovelty         2969.350000
+TrainMaxNovelty          8296.000000
+StepsSinceStart          1348425.000000
+StepsThisIter            14339.000000
+IterationTime            523.079849
+TimeSinceStart           790.950495
+ParamNorm           74.109360
+StepNorm            3.796599
+Sigma               0.009999
+PSigmaNorm          15.747379
+------------------------------------
+------------------------------------
+Iteration                93.000000
+EvalMeanReward           400.000000
+EvalMaxReward            400.000000
+EvalMeanNovelty          7211.995968
+EvalMaxNovelty           7215.343206
+TrainMeanReward          184.375000
+TrainMaxReward           550.000000
+TrainMeanNovelty         2532.050000
+TrainMaxNovelty          8493.000000
+StepsSinceStart          1362990.000000
+StepsThisIter            14565.000000
+IterationTime            494.696566
+TimeSinceStart           799.197637
+ParamNorm           74.156197
+StepNorm            2.677877
+Sigma               0.009999
+PSigmaNorm          15.790881
+------------------------------------
+------------------------------------
+Iteration                94.000000
+EvalMeanReward           75.000000
+EvalMaxReward            75.000000
+EvalMeanNovelty          671.658832
+EvalMaxNovelty           672.418574
+TrainMeanReward          198.750000
+TrainMaxReward           575.000000
+TrainMeanNovelty         3091.400000
+TrainMaxNovelty          9942.000000
+StepsSinceStart          1376788.000000
+StepsThisIter            13798.000000
+IterationTime            503.118881
+TimeSinceStart           807.585311
+ParamNorm           74.170418
+StepNorm            1.514483
+Sigma               0.009999
+PSigmaNorm          15.805151
+------------------------------------
+------------------------------------
+Iteration                95.000000
+EvalMeanReward           150.000000
+EvalMaxReward            225.000000
+EvalMeanNovelty          1629.863685
+EvalMaxNovelty           2477.000601
+TrainMeanReward          196.250000
+TrainMaxReward           525.000000
+TrainMeanNovelty         3190.075000
+TrainMaxNovelty          9508.000000
+StepsSinceStart          1391650.000000
+StepsThisIter            14862.000000
+IterationTime            525.762085
+TimeSinceStart           816.350191
+ParamNorm           74.241501
+StepNorm            3.252942
+Sigma               0.009999
+PSigmaNorm          15.869837
+------------------------------------
+------------------------------------
+Iteration                96.000000
+EvalMeanReward           75.000000
+EvalMaxReward            75.000000
+EvalMeanNovelty          1960.765429
+EvalMaxNovelty           3349.738169
+TrainMeanReward          200.625000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2469.875000
+TrainMaxNovelty          7250.000000
+StepsSinceStart          1405355.000000
+StepsThisIter            13705.000000
+IterationTime            499.337206
+TimeSinceStart           824.674544
+ParamNorm           74.346581
+StepNorm            3.994086
+Sigma               0.009999
+PSigmaNorm          15.968230
+------------------------------------
+------------------------------------
+Iteration                97.000000
+EvalMeanReward           387.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2721.310193
+EvalMaxNovelty           4457.978904
+TrainMeanReward          236.250000
+TrainMaxReward           675.000000
+TrainMeanNovelty         3301.275000
+TrainMaxNovelty          7991.000000
+StepsSinceStart          1419858.000000
+StepsThisIter            14503.000000
+IterationTime            528.258130
+TimeSinceStart           833.480947
+ParamNorm           74.475716
+StepNorm            4.344969
+Sigma               0.009999
+PSigmaNorm          16.081436
+------------------------------------
+------------------------------------
+Iteration                98.000000
+EvalMeanReward           625.000000
+EvalMaxReward            800.000000
+EvalMeanNovelty          3242.199428
+EvalMaxNovelty           3786.188747
+TrainMeanReward          193.125000
+TrainMaxReward           650.000000
+TrainMeanNovelty         2428.250000
+TrainMaxNovelty          7223.000000
+StepsSinceStart          1434073.000000
+StepsThisIter            14215.000000
+IterationTime            521.752121
+TimeSinceStart           842.179270
+ParamNorm           74.550392
+StepNorm            3.460738
+Sigma               0.009998
+PSigmaNorm          16.151132
+------------------------------------
+------------------------------------
+Iteration                99.000000
+EvalMeanReward           412.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2572.076140
+EvalMaxNovelty           3757.766123
+TrainMeanReward          195.625000
+TrainMaxReward           575.000000
+TrainMeanNovelty         3392.050000
+TrainMaxNovelty          10351.000000
+StepsSinceStart          1448627.000000
+StepsThisIter            14554.000000
+IterationTime            505.617754
+TimeSinceStart           850.608767
+ParamNorm           74.616623
+StepNorm            3.116445
+Sigma               0.009998
+PSigmaNorm          16.210078
+------------------------------------
+------------------------------------
+Iteration                100.000000
+EvalMeanReward           350.000000
+EvalMaxReward            350.000000
+EvalMeanNovelty          1933.495523
+EvalMaxNovelty           1934.084821
+TrainMeanReward          198.750000
+TrainMaxReward           575.000000
+TrainMeanNovelty         3370.725000
+TrainMaxNovelty          8527.000000
+StepsSinceStart          1462142.000000
+StepsThisIter            13515.000000
+IterationTime            453.722092
+TimeSinceStart           858.173046
+ParamNorm           74.699829
+StepNorm            3.530723
+Sigma               0.009998
+PSigmaNorm          16.284658
+------------------------------------
+------------------------------------
+Iteration                101.000000
+EvalMeanReward           362.500000
+EvalMaxReward            375.000000
+EvalMeanNovelty          2384.437734
+EvalMaxNovelty           2836.331451
+TrainMeanReward          204.375000
+TrainMaxReward           675.000000
+TrainMeanNovelty         3723.375000
+TrainMaxNovelty          8596.000000
+StepsSinceStart          1476522.000000
+StepsThisIter            14380.000000
+IterationTime            513.242774
+TimeSinceStart           866.729378
+ParamNorm           74.830605
+StepNorm            4.529185
+Sigma               0.009998
+PSigmaNorm          16.403507
+------------------------------------
+------------------------------------
+Iteration                102.000000
+EvalMeanReward           375.000000
+EvalMaxReward            375.000000
+EvalMeanNovelty          2932.592920
+EvalMaxNovelty           3027.597754
+TrainMeanReward          170.625000
+TrainMaxReward           525.000000
+TrainMeanNovelty         2915.775000
+TrainMaxNovelty          8044.000000
+StepsSinceStart          1490599.000000
+StepsThisIter            14077.000000
+IterationTime            501.633706
+TimeSinceStart           875.092616
+ParamNorm           75.204521
+StepNorm            7.381590
+Sigma               0.009998
+PSigmaNorm          16.727078
+------------------------------------
+------------------------------------
+Iteration                103.000000
+EvalMeanReward           350.000000
+EvalMaxReward            350.000000
+EvalMeanNovelty          1931.715522
+EvalMaxNovelty           1931.863219
+TrainMeanReward          192.500000
+TrainMaxReward           525.000000
+TrainMeanNovelty         2875.200000
+TrainMaxNovelty          8901.000000
+StepsSinceStart          1504563.000000
+StepsThisIter            13964.000000
+IterationTime            544.457737
+TimeSinceStart           884.169322
+ParamNorm           75.520447
+StepNorm            6.832929
+Sigma               0.009998
+PSigmaNorm          16.998257
+------------------------------------
+------------------------------------
+Iteration                104.000000
+EvalMeanReward           125.000000
+EvalMaxReward            125.000000
+EvalMeanNovelty          2853.950444
+EvalMaxNovelty           2956.628837
+TrainMeanReward          228.125000
+TrainMaxReward           1125.000000
+TrainMeanNovelty         3040.250000
+TrainMaxNovelty          7651.000000
+StepsSinceStart          1519041.000000
+StepsThisIter            14478.000000
+IterationTime            534.669770
+TimeSinceStart           893.083222
+ParamNorm           75.682846
+StepNorm            4.968729
+Sigma               0.009998
+PSigmaNorm          17.136868
+------------------------------------
+------------------------------------
+Iteration                105.000000
+EvalMeanReward           350.000000
+EvalMaxReward            350.000000
+EvalMeanNovelty          4045.266150
+EvalMaxNovelty           4537.646000
+TrainMeanReward          193.750000
+TrainMaxReward           500.000000
+TrainMeanNovelty         2361.300000
+TrainMaxNovelty          6505.000000
+StepsSinceStart          1533130.000000
+StepsThisIter            14089.000000
+IterationTime            488.019014
+TimeSinceStart           901.219156
+ParamNorm           75.732063
+StepNorm            2.765942
+Sigma               0.009998
+PSigmaNorm          17.180639
+------------------------------------
+------------------------------------
+Iteration                106.000000
+EvalMeanReward           625.000000
+EvalMaxReward            900.000000
+EvalMeanNovelty          2362.049060
+EvalMaxNovelty           3553.578862
+TrainMeanReward          221.250000
+TrainMaxReward           650.000000
+TrainMeanNovelty         2599.850000
+TrainMaxNovelty          7798.000000
+StepsSinceStart          1546741.000000
+StepsThisIter            13611.000000
+IterationTime            493.121802
+TimeSinceStart           909.440238
+ParamNorm           75.811798
+StepNorm            3.460138
+Sigma               0.009998
+PSigmaNorm          17.248703
+------------------------------------
+------------------------------------
+Iteration                107.000000
+EvalMeanReward           350.000000
+EvalMaxReward            350.000000
+EvalMeanNovelty          4407.924575
+EvalMaxNovelty           4536.320650
+TrainMeanReward          206.875000
+TrainMaxReward           825.000000
+TrainMeanNovelty         2944.500000
+TrainMaxNovelty          9275.000000
+StepsSinceStart          1561702.000000
+StepsThisIter            14961.000000
+IterationTime            584.319041
+TimeSinceStart           919.180915
+ParamNorm           75.851463
+StepNorm            2.386229
+Sigma               0.009998
+PSigmaNorm          17.280601
+------------------------------------
+------------------------------------
+Iteration                108.000000
+EvalMeanReward           350.000000
+EvalMaxReward            350.000000
+EvalMeanNovelty          4134.542389
+EvalMaxNovelty           4535.632431
+TrainMeanReward          194.375000
+TrainMaxReward           650.000000
+TrainMeanNovelty         3110.300000
+TrainMaxNovelty          10255.000000
+StepsSinceStart          1575387.000000
+StepsThisIter            13685.000000
+IterationTime            506.757934
+TimeSinceStart           927.629366
+ParamNorm           75.896439
+StepNorm            2.734500
+Sigma               0.009998
+PSigmaNorm          17.320824
+------------------------------------
+------------------------------------
+Iteration                109.000000
+EvalMeanReward           425.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          3174.701294
+EvalMaxNovelty           3178.982502
+TrainMeanReward          143.125000
+TrainMaxReward           475.000000
+TrainMeanNovelty         2906.000000
+TrainMaxNovelty          8674.000000
+StepsSinceStart          1588350.000000
+StepsThisIter            12963.000000
+IterationTime            454.875657
+TimeSinceStart           935.212766
+ParamNorm           75.960632
+StepNorm            3.218867
+Sigma               0.009998
+PSigmaNorm          17.376916
+------------------------------------
+------------------------------------
+Iteration                110.000000
+EvalMeanReward           350.000000
+EvalMaxReward            350.000000
+EvalMeanNovelty          3837.284130
+EvalMaxNovelty           3990.189085
+TrainMeanReward          189.375000
+TrainMaxReward           750.000000
+TrainMeanNovelty         3157.550000
+TrainMaxNovelty          9835.000000
+StepsSinceStart          1602224.000000
+StepsThisIter            13874.000000
+IterationTime            466.207522
+TimeSinceStart           942.985194
+ParamNorm           76.001945
+StepNorm            2.511308
+Sigma               0.009998
+PSigmaNorm          17.412007
+------------------------------------
+------------------------------------
+Iteration                111.000000
+EvalMeanReward           350.000000
+EvalMaxReward            350.000000
+EvalMeanNovelty          3771.731776
+EvalMaxNovelty           3990.242662
+TrainMeanReward          168.125000
+TrainMaxReward           650.000000
+TrainMeanNovelty         2665.525000
+TrainMaxNovelty          8175.000000
+StepsSinceStart          1616047.000000
+StepsThisIter            13823.000000
+IterationTime            515.696781
+TimeSinceStart           951.582337
+ParamNorm           76.066261
+StepNorm            3.108741
+Sigma               0.009998
+PSigmaNorm          17.464087
+------------------------------------
+------------------------------------
+Iteration                112.000000
+EvalMeanReward           350.000000
+EvalMaxReward            350.000000
+EvalMeanNovelty          3626.740470
+EvalMaxNovelty           3992.604759
+TrainMeanReward          215.625000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2560.525000
+TrainMaxNovelty          7210.000000
+StepsSinceStart          1630640.000000
+StepsThisIter            14593.000000
+IterationTime            499.522263
+TimeSinceStart           959.910127
+ParamNorm           76.272758
+StepNorm            5.640854
+Sigma               0.009998
+PSigmaNorm          17.637638
+------------------------------------
+------------------------------------
+Iteration                113.000000
+EvalMeanReward           362.500000
+EvalMaxReward            375.000000
+EvalMeanNovelty          3322.491473
+EvalMaxNovelty           3553.071029
+TrainMeanReward          173.750000
+TrainMaxReward           575.000000
+TrainMeanNovelty         2619.600000
+TrainMaxNovelty          7938.000000
+StepsSinceStart          1644019.000000
+StepsThisIter            13379.000000
+IterationTime            472.763707
+TimeSinceStart           967.791311
+ParamNorm           76.336685
+StepNorm            3.141499
+Sigma               0.009998
+PSigmaNorm          17.692405
+------------------------------------
+------------------------------------
+Iteration                114.000000
+EvalMeanReward           450.000000
+EvalMaxReward            450.000000
+EvalMeanNovelty          3205.586966
+EvalMaxNovelty           3205.597695
+TrainMeanReward          207.500000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2453.825000
+TrainMaxNovelty          9497.000000
+StepsSinceStart          1658336.000000
+StepsThisIter            14317.000000
+IterationTime            496.083849
+TimeSinceStart           976.061728
+ParamNorm           76.373177
+StepNorm            2.354456
+Sigma               0.009998
+PSigmaNorm          17.723091
+------------------------------------
+------------------------------------
+Iteration                115.000000
+EvalMeanReward           450.000000
+EvalMaxReward            550.000000
+EvalMeanNovelty          3283.953505
+EvalMaxNovelty           3553.115915
+TrainMeanReward          206.875000
+TrainMaxReward           800.000000
+TrainMeanNovelty         3134.325000
+TrainMaxNovelty          9778.000000
+StepsSinceStart          1672372.000000
+StepsThisIter            14036.000000
+IterationTime            539.999585
+TimeSinceStart           985.063887
+ParamNorm           76.459824
+StepNorm            3.695037
+Sigma               0.009998
+PSigmaNorm          17.798217
+------------------------------------
+------------------------------------
+Iteration                116.000000
+EvalMeanReward           350.000000
+EvalMaxReward            350.000000
+EvalMeanNovelty          3761.901051
+EvalMaxNovelty           3970.681479
+TrainMeanReward          176.875000
+TrainMaxReward           550.000000
+TrainMeanNovelty         2776.500000
+TrainMaxNovelty          8857.000000
+StepsSinceStart          1686062.000000
+StepsThisIter            13690.000000
+IterationTime            536.421002
+TimeSinceStart           994.006461
+ParamNorm           76.520355
+StepNorm            3.074617
+Sigma               0.009998
+PSigmaNorm          17.849674
+------------------------------------
+------------------------------------
+Iteration                117.000000
+EvalMeanReward           350.000000
+EvalMaxReward            350.000000
+EvalMeanNovelty          3642.646508
+EvalMaxNovelty           3731.401481
+TrainMeanReward          200.000000
+TrainMaxReward           675.000000
+TrainMeanNovelty         2411.450000
+TrainMaxNovelty          7360.000000
+StepsSinceStart          1700400.000000
+StepsThisIter            14338.000000
+IterationTime            515.124798
+TimeSinceStart           1002.594095
+ParamNorm           76.598671
+StepNorm            3.549853
+Sigma               0.009998
+PSigmaNorm          17.918298
+------------------------------------
+------------------------------------
+Iteration                118.000000
+EvalMeanReward           375.000000
+EvalMaxReward            375.000000
+EvalMeanNovelty          4492.279650
+EvalMaxNovelty           4492.737321
+TrainMeanReward          170.000000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3516.250000
+TrainMaxNovelty          9729.000000
+StepsSinceStart          1715478.000000
+StepsThisIter            15078.000000
+IterationTime            632.777745
+TimeSinceStart           1013.142630
+ParamNorm           76.730766
+StepNorm            4.539180
+Sigma               0.009998
+PSigmaNorm          18.029777
+------------------------------------
+------------------------------------
+Iteration                119.000000
+EvalMeanReward           362.500000
+EvalMaxReward            375.000000
+EvalMeanNovelty          4231.571035
+EvalMaxNovelty           4492.859857
+TrainMeanReward          188.750000
+TrainMaxReward           550.000000
+TrainMeanNovelty         2817.700000
+TrainMaxNovelty          8973.000000
+StepsSinceStart          1729248.000000
+StepsThisIter            13770.000000
+IterationTime            492.959172
+TimeSinceStart           1021.361132
+ParamNorm           76.768433
+StepNorm            2.481999
+Sigma               0.009998
+PSigmaNorm          18.061831
+------------------------------------
+------------------------------------
+Iteration                120.000000
+EvalMeanReward           362.500000
+EvalMaxReward            375.000000
+EvalMeanNovelty          4231.431101
+EvalMaxNovelty           4492.010153
+TrainMeanReward          235.625000
+TrainMaxReward           650.000000
+TrainMeanNovelty         3112.725000
+TrainMaxNovelty          7390.000000
+StepsSinceStart          1743638.000000
+StepsThisIter            14390.000000
+IterationTime            494.364397
+TimeSinceStart           1029.603499
+ParamNorm           76.887589
+StepNorm            4.200797
+Sigma               0.009998
+PSigmaNorm          18.156745
+------------------------------------
+------------------------------------
+Iteration                121.000000
+EvalMeanReward           400.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2876.452181
+EvalMaxNovelty           3372.164246
+TrainMeanReward          150.625000
+TrainMaxReward           525.000000
+TrainMeanNovelty         2539.425000
+TrainMaxNovelty          6861.000000
+StepsSinceStart          1757318.000000
+StepsThisIter            13680.000000
+IterationTime            485.043246
+TimeSinceStart           1037.690129
+ParamNorm           77.085243
+StepNorm            5.636961
+Sigma               0.009998
+PSigmaNorm          18.324013
+------------------------------------
+------------------------------------
+Iteration                122.000000
+EvalMeanReward           425.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          1715.404903
+EvalMaxNovelty           2974.641944
+TrainMeanReward          257.500000
+TrainMaxReward           575.000000
+TrainMeanNovelty         2963.025000
+TrainMaxNovelty          9145.000000
+StepsSinceStart          1771866.000000
+StepsThisIter            14548.000000
+IterationTime            487.759332
+TimeSinceStart           1045.822068
+ParamNorm           77.170967
+StepNorm            3.587572
+Sigma               0.009998
+PSigmaNorm          18.392340
+------------------------------------
+------------------------------------
+Iteration                123.000000
+EvalMeanReward           412.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          1840.909311
+EvalMaxNovelty           3197.148214
+TrainMeanReward          213.125000
+TrainMaxReward           525.000000
+TrainMeanNovelty         3406.550000
+TrainMaxNovelty          8901.000000
+StepsSinceStart          1786424.000000
+StepsThisIter            14558.000000
+IterationTime            539.182765
+TimeSinceStart           1054.810914
+ParamNorm           77.225197
+StepNorm            2.760353
+Sigma               0.009998
+PSigmaNorm          18.434623
+------------------------------------
+------------------------------------
+Iteration                124.000000
+EvalMeanReward           612.500000
+EvalMaxReward            750.000000
+EvalMeanNovelty          1813.440516
+EvalMaxNovelty           2366.517927
+TrainMeanReward          196.250000
+TrainMaxReward           575.000000
+TrainMeanNovelty         3440.450000
+TrainMaxNovelty          10654.000000
+StepsSinceStart          1799979.000000
+StepsThisIter            13555.000000
+IterationTime            458.404515
+TimeSinceStart           1062.453614
+ParamNorm           77.269135
+StepNorm            2.568442
+Sigma               0.009998
+PSigmaNorm          18.469229
+------------------------------------
+------------------------------------
+Iteration                125.000000
+EvalMeanReward           400.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          1678.029142
+EvalMaxNovelty           2818.329208
+TrainMeanReward          173.750000
+TrainMaxReward           575.000000
+TrainMeanNovelty         2651.550000
+TrainMaxNovelty          11050.000000
+StepsSinceStart          1814331.000000
+StepsThisIter            14352.000000
+IterationTime            502.647395
+TimeSinceStart           1070.833447
+ParamNorm           77.299385
+StepNorm            2.288141
+Sigma               0.009998
+PSigmaNorm          18.495444
+------------------------------------
+------------------------------------
+Iteration                126.000000
+EvalMeanReward           475.000000
+EvalMaxReward            525.000000
+EvalMeanNovelty          1098.577262
+EvalMaxNovelty           1741.419002
+TrainMeanReward          183.125000
+TrainMaxReward           550.000000
+TrainMeanNovelty         2361.675000
+TrainMaxNovelty          8409.000000
+StepsSinceStart          1829355.000000
+StepsThisIter            15024.000000
+IterationTime            571.520361
+TimeSinceStart           1080.361227
+ParamNorm           77.327225
+StepNorm            2.076726
+Sigma               0.009998
+PSigmaNorm          18.518540
+------------------------------------
+------------------------------------
+Iteration                127.000000
+EvalMeanReward           437.500000
+EvalMaxReward            450.000000
+EvalMeanNovelty          549.605988
+EvalMaxNovelty           644.042494
+TrainMeanReward          147.500000
+TrainMaxReward           550.000000
+TrainMeanNovelty         2839.125000
+TrainMaxNovelty          9497.000000
+StepsSinceStart          1842557.000000
+StepsThisIter            13202.000000
+IterationTime            505.476175
+TimeSinceStart           1088.788217
+ParamNorm           77.450218
+StepNorm            4.244422
+Sigma               0.009998
+PSigmaNorm          18.613977
+------------------------------------
+------------------------------------
+Iteration                128.000000
+EvalMeanReward           412.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          1966.720274
+EvalMaxNovelty           3243.789159
+TrainMeanReward          151.875000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3533.475000
+TrainMaxNovelty          9714.000000
+StepsSinceStart          1856699.000000
+StepsThisIter            14142.000000
+IterationTime            581.125825
+TimeSinceStart           1098.475775
+ParamNorm           77.472374
+StepNorm            1.816506
+Sigma               0.009998
+PSigmaNorm          18.631476
+------------------------------------
+------------------------------------
+Iteration                129.000000
+EvalMeanReward           462.500000
+EvalMaxReward            500.000000
+EvalMeanNovelty          629.523443
+EvalMaxNovelty           661.080792
+TrainMeanReward          245.625000
+TrainMaxReward           650.000000
+TrainMeanNovelty         2682.275000
+TrainMaxNovelty          8352.000000
+StepsSinceStart          1871118.000000
+StepsThisIter            14419.000000
+IterationTime            550.452798
+TimeSinceStart           1107.652319
+ParamNorm           77.506119
+StepNorm            2.287775
+Sigma               0.009998
+PSigmaNorm          18.659305
+------------------------------------
+------------------------------------
+Iteration                130.000000
+EvalMeanReward           412.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          1098.023191
+EvalMaxNovelty           1590.910965
+TrainMeanReward          155.625000
+TrainMaxReward           575.000000
+TrainMeanNovelty         3367.725000
+TrainMaxNovelty          7584.000000
+StepsSinceStart          1885514.000000
+StepsThisIter            14396.000000
+IterationTime            497.294240
+TimeSinceStart           1115.943190
+ParamNorm           77.532127
+StepNorm            1.963894
+Sigma               0.009998
+PSigmaNorm          18.679387
+------------------------------------
+------------------------------------
+Iteration                131.000000
+EvalMeanReward           387.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2179.149658
+EvalMaxNovelty           3903.886734
+TrainMeanReward          193.125000
+TrainMaxReward           600.000000
+TrainMeanNovelty         2880.725000
+TrainMaxNovelty          10580.000000
+StepsSinceStart          1899517.000000
+StepsThisIter            14003.000000
+IterationTime            502.838027
+TimeSinceStart           1124.326217
+ParamNorm           77.650696
+StepNorm            4.277396
+Sigma               0.009998
+PSigmaNorm          18.772804
+------------------------------------
+------------------------------------
+Iteration                132.000000
+EvalMeanReward           425.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          527.553527
+EvalMaxNovelty           599.702395
+TrainMeanReward          220.625000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3075.250000
+TrainMaxNovelty          9885.000000
+StepsSinceStart          1913391.000000
+StepsThisIter            13874.000000
+IterationTime            502.124321
+TimeSinceStart           1132.697273
+ParamNorm           77.853012
+StepNorm            5.535627
+Sigma               0.009998
+PSigmaNorm          18.931693
+------------------------------------
+------------------------------------
+Iteration                133.000000
+EvalMeanReward           375.000000
+EvalMaxReward            375.000000
+EvalMeanNovelty          3086.403651
+EvalMaxNovelty           3343.587789
+TrainMeanReward          215.625000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2460.900000
+TrainMaxNovelty          10591.000000
+StepsSinceStart          1927701.000000
+StepsThisIter            14310.000000
+IterationTime            522.964604
+TimeSinceStart           1141.415959
+ParamNorm           77.977043
+StepNorm            4.435475
+Sigma               0.009998
+PSigmaNorm          19.030733
+------------------------------------
+------------------------------------
+Iteration                134.000000
+EvalMeanReward           412.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2650.789772
+EvalMaxNovelty           3493.255512
+TrainMeanReward          200.625000
+TrainMaxReward           650.000000
+TrainMeanNovelty         3160.875000
+TrainMaxNovelty          9208.000000
+StepsSinceStart          1941703.000000
+StepsThisIter            14002.000000
+IterationTime            473.734362
+TimeSinceStart           1149.313476
+ParamNorm           78.037766
+StepNorm            3.023670
+Sigma               0.009998
+PSigmaNorm          19.078367
+------------------------------------
+------------------------------------
+Iteration                135.000000
+EvalMeanReward           412.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          1850.832023
+EvalMaxNovelty           3226.884820
+TrainMeanReward          223.750000
+TrainMaxReward           675.000000
+TrainMeanNovelty         2510.450000
+TrainMaxNovelty          8923.000000
+StepsSinceStart          1956049.000000
+StepsThisIter            14346.000000
+IterationTime            510.443657
+TimeSinceStart           1157.823332
+ParamNorm           78.132317
+StepNorm            3.924676
+Sigma               0.009998
+PSigmaNorm          19.156603
+------------------------------------
+------------------------------------
+Iteration                136.000000
+EvalMeanReward           350.000000
+EvalMaxReward            350.000000
+EvalMeanNovelty          4492.324092
+EvalMaxNovelty           4492.932067
+TrainMeanReward          190.625000
+TrainMaxReward           875.000000
+TrainMeanNovelty         2879.675000
+TrainMaxNovelty          8340.000000
+StepsSinceStart          1970047.000000
+StepsThisIter            13998.000000
+IterationTime            569.188798
+TimeSinceStart           1167.312241
+ParamNorm           78.219009
+StepNorm            3.679359
+Sigma               0.009998
+PSigmaNorm          19.226010
+------------------------------------
+------------------------------------
+Iteration                137.000000
+EvalMeanReward           412.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          2577.252038
+EvalMaxNovelty           4748.438672
+TrainMeanReward          220.000000
+TrainMaxReward           700.000000
+TrainMeanNovelty         3281.475000
+TrainMaxNovelty          10066.000000
+StepsSinceStart          1985437.000000
+StepsThisIter            15390.000000
+IterationTime            578.999456
+TimeSinceStart           1176.964348
+ParamNorm           78.314407
+StepNorm            3.905297
+Sigma               0.009998
+PSigmaNorm          19.300301
+------------------------------------
+------------------------------------
+Iteration                138.000000
+EvalMeanReward           475.000000
+EvalMaxReward            475.000000
+EvalMeanNovelty          474.466085
+EvalMaxNovelty           474.512818
+TrainMeanReward          220.625000
+TrainMaxReward           1075.000000
+TrainMeanNovelty         2796.025000
+TrainMaxNovelty          8309.000000
+StepsSinceStart          1999979.000000
+StepsThisIter            14542.000000
+IterationTime            527.536166
+TimeSinceStart           1185.759015
+ParamNorm           78.383240
+StepNorm            3.232787
+Sigma               0.009998
+PSigmaNorm          19.355014
+------------------------------------
+------------------------------------
+Iteration                139.000000
+EvalMeanReward           500.000000
+EvalMaxReward            500.000000
+EvalMeanNovelty          581.012819
+EvalMaxNovelty           581.012823
+TrainMeanReward          194.375000
+TrainMaxReward           675.000000
+TrainMeanNovelty         3082.300000
+TrainMaxNovelty          9383.000000
+StepsSinceStart          2014288.000000
+StepsThisIter            14309.000000
+IterationTime            570.908669
+TimeSinceStart           1195.276229
+ParamNorm           78.491989
+StepNorm            4.182195
+Sigma               0.009998
+PSigmaNorm          19.443127
+------------------------------------
+------------------------------------
+Iteration                140.000000
+EvalMeanReward           475.000000
+EvalMaxReward            550.000000
+EvalMeanNovelty          3668.950430
+EvalMaxNovelty           6803.390629
+TrainMeanReward          195.625000
+TrainMaxReward           700.000000
+TrainMeanNovelty         3101.600000
+TrainMaxNovelty          9112.000000
+StepsSinceStart          2028302.000000
+StepsThisIter            14014.000000
+IterationTime            461.389153
+TimeSinceStart           1202.968364
+ParamNorm           78.585831
+StepNorm            3.851659
+Sigma               0.009998
+PSigmaNorm          19.516696
+------------------------------------
+------------------------------------
+Iteration                141.000000
+EvalMeanReward           450.000000
+EvalMaxReward            475.000000
+EvalMeanNovelty          1405.299605
+EvalMaxNovelty           2286.646718
+TrainMeanReward          196.875000
+TrainMaxReward           675.000000
+TrainMeanNovelty         2340.325000
+TrainMaxNovelty          7936.000000
+StepsSinceStart          2042748.000000
+StepsThisIter            14446.000000
+IterationTime            548.786139
+TimeSinceStart           1212.117224
+ParamNorm           78.687675
+StepNorm            4.027845
+Sigma               0.009998
+PSigmaNorm          19.596168
+------------------------------------
+------------------------------------
+Iteration                142.000000
+EvalMeanReward           425.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2285.684961
+EvalMaxNovelty           2286.008295
+TrainMeanReward          198.750000
+TrainMaxReward           675.000000
+TrainMeanNovelty         2844.725000
+TrainMaxNovelty          9382.000000
+StepsSinceStart          2057694.000000
+StepsThisIter            14946.000000
+IterationTime            541.284139
+TimeSinceStart           1221.141346
+ParamNorm           78.739914
+StepNorm            2.813754
+Sigma               0.009998
+PSigmaNorm          19.636457
+------------------------------------
+------------------------------------
+Iteration                143.000000
+EvalMeanReward           437.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          598.528029
+EvalMaxNovelty           661.315116
+TrainMeanReward          204.375000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2218.375000
+TrainMaxNovelty          8771.000000
+StepsSinceStart          2072192.000000
+StepsThisIter            14498.000000
+IterationTime            535.656751
+TimeSinceStart           1230.071323
+ParamNorm           78.762207
+StepNorm            1.798309
+Sigma               0.009998
+PSigmaNorm          19.652480
+------------------------------------
+------------------------------------
+Iteration                144.000000
+EvalMeanReward           400.000000
+EvalMaxReward            400.000000
+EvalMeanNovelty          652.054735
+EvalMaxNovelty           715.903244
+TrainMeanReward          137.500000
+TrainMaxReward           400.000000
+TrainMeanNovelty         2452.150000
+TrainMaxNovelty          8628.000000
+StepsSinceStart          2086482.000000
+StepsThisIter            14290.000000
+IterationTime            476.349840
+TimeSinceStart           1238.012913
+ParamNorm           78.821335
+StepNorm            3.014150
+Sigma               0.009998
+PSigmaNorm          19.697972
+------------------------------------
+------------------------------------
+Iteration                145.000000
+EvalMeanReward           425.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2285.696968
+EvalMaxNovelty           2286.069798
+TrainMeanReward          233.750000
+TrainMaxReward           750.000000
+TrainMeanNovelty         2617.025000
+TrainMaxNovelty          8097.000000
+StepsSinceStart          2100532.000000
+StepsThisIter            14050.000000
+IterationTime            520.828405
+TimeSinceStart           1246.695937
+ParamNorm           78.838722
+StepNorm            1.614309
+Sigma               0.009998
+PSigmaNorm          19.710704
+------------------------------------
+------------------------------------
+Iteration                146.000000
+EvalMeanReward           400.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2463.456985
+EvalMaxNovelty           3032.782126
+TrainMeanReward          231.250000
+TrainMaxReward           700.000000
+TrainMeanNovelty         2730.875000
+TrainMaxNovelty          9431.000000
+StepsSinceStart          2114649.000000
+StepsThisIter            14117.000000
+IterationTime            489.653201
+TimeSinceStart           1254.859233
+ParamNorm           79.001236
+StepNorm            5.075952
+Sigma               0.009998
+PSigmaNorm          19.835040
+------------------------------------
+------------------------------------
+Iteration                147.000000
+EvalMeanReward           400.000000
+EvalMaxReward            425.000000
+EvalMeanNovelty          2460.924803
+EvalMaxNovelty           3028.100356
+TrainMeanReward          200.625000
+TrainMaxReward           550.000000
+TrainMeanNovelty         3505.175000
+TrainMaxNovelty          9525.000000
+StepsSinceStart          2128551.000000
+StepsThisIter            13902.000000
+IterationTime            511.468464
+TimeSinceStart           1263.386072
+ParamNorm           79.094887
+StepNorm            3.824371
+Sigma               0.009998
+PSigmaNorm          19.906801
+------------------------------------
+------------------------------------
+Iteration                148.000000
+EvalMeanReward           475.000000
+EvalMaxReward            575.000000
+EvalMeanNovelty          2573.704026
+EvalMaxNovelty           4096.258843
+TrainMeanReward          198.125000
+TrainMaxReward           550.000000
+TrainMeanNovelty         2484.650000
+TrainMaxNovelty          9447.000000
+StepsSinceStart          2141902.000000
+StepsThisIter            13351.000000
+IterationTime            489.023343
+TimeSinceStart           1271.538764
+ParamNorm           79.146133
+StepNorm            2.892350
+Sigma               0.009998
+PSigmaNorm          19.947253
+------------------------------------
+------------------------------------
+Iteration                149.000000
+EvalMeanReward           412.500000
+EvalMaxReward            425.000000
+EvalMeanNovelty          1390.273839
+EvalMaxNovelty           2263.757987
+TrainMeanReward          205.000000
+TrainMaxReward           575.000000
+TrainMeanNovelty         3103.500000
+TrainMaxNovelty          9875.000000
+StepsSinceStart          2155794.000000
+StepsThisIter            13892.000000
+IterationTime            472.050380
+TimeSinceStart           1279.408245
+ParamNorm           79.271454
+StepNorm            4.443589
+Sigma               0.009998
+PSigmaNorm          20.041938
+------------------------------------
+------------------------------------
+Iteration                150.000000
+EvalMeanReward           537.500000
+EvalMaxReward            575.000000
+EvalMeanNovelty          930.563945
+EvalMaxNovelty           1609.350795
+TrainMeanReward          166.250000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2518.400000
+TrainMaxNovelty          7348.000000
+StepsSinceStart          2169004.000000
+StepsThisIter            13210.000000
+IterationTime            474.547618
+TimeSinceStart           1287.319795
+ParamNorm           79.392899
+StepNorm            4.394061
+Sigma               0.009998
+PSigmaNorm          20.133977
+------------------------------------
+------------------------------------
+Iteration                151.000000
+EvalMeanReward           437.500000
+EvalMaxReward            450.000000
+EvalMeanNovelty          4460.190571
+EvalMaxNovelty           8465.471234
+TrainMeanReward          188.750000
+TrainMaxReward           675.000000
+TrainMeanNovelty         2986.575000
+TrainMaxNovelty          9966.000000
+StepsSinceStart          2183410.000000
+StepsThisIter            14406.000000
+IterationTime            479.351618
+TimeSinceStart           1295.311364
+ParamNorm           79.475342
+StepNorm            3.526444
+Sigma               0.009998
+PSigmaNorm          20.193992
+------------------------------------
+------------------------------------
+Iteration                152.000000
+EvalMeanReward           450.000000
+EvalMaxReward            475.000000
+EvalMeanNovelty          1772.874222
+EvalMaxNovelty           3071.297092
+TrainMeanReward          229.375000
+TrainMaxReward           1025.000000
+TrainMeanNovelty         2973.875000
+TrainMaxNovelty          6919.000000
+StepsSinceStart          2197902.000000
+StepsThisIter            14492.000000
+IterationTime            567.896323
+TimeSinceStart           1304.778600
+ParamNorm           79.624344
+StepNorm            4.980329
+Sigma               0.009998
+PSigmaNorm          20.310579
+------------------------------------
+------------------------------------
+Iteration                153.000000
+EvalMeanReward           475.000000
+EvalMaxReward            475.000000
+EvalMeanNovelty          583.082468
+EvalMaxNovelty           691.667410
+TrainMeanReward          232.500000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3197.700000
+TrainMaxNovelty          7600.000000
+StepsSinceStart          2211373.000000
+StepsThisIter            13471.000000
+IterationTime            474.311491
+TimeSinceStart           1312.685893
+ParamNorm           79.708336
+StepNorm            3.731208
+Sigma               0.009998
+PSigmaNorm          20.377652
+------------------------------------
+------------------------------------
+Iteration                154.000000
+EvalMeanReward           412.500000
+EvalMaxReward            450.000000
+EvalMeanNovelty          4458.917346
+EvalMaxNovelty           6433.542819
+TrainMeanReward          200.625000
+TrainMaxReward           675.000000
+TrainMeanNovelty         2907.925000
+TrainMaxNovelty          8963.000000
+StepsSinceStart          2225076.000000
+StepsThisIter            13703.000000
+IterationTime            489.854145
+TimeSinceStart           1320.852288
+ParamNorm           79.770157
+StepNorm            3.140120
+Sigma               0.009998
+PSigmaNorm          20.423825
+------------------------------------
+------------------------------------
+Iteration                155.000000
+EvalMeanReward           512.500000
+EvalMaxReward            550.000000
+EvalMeanNovelty          1506.274494
+EvalMaxNovelty           1899.248749
+TrainMeanReward          183.125000
+TrainMaxReward           650.000000
+TrainMeanNovelty         2849.575000
+TrainMaxNovelty          9726.000000
+StepsSinceStart          2239237.000000
+StepsThisIter            14161.000000
+IterationTime            512.201977
+TimeSinceStart           1329.391332
+ParamNorm           79.832718
+StepNorm            3.109904
+Sigma               0.009998
+PSigmaNorm          20.471449
+------------------------------------
+------------------------------------
+Iteration                156.000000
+EvalMeanReward           437.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          2316.328691
+EvalMaxNovelty           4040.108645
+TrainMeanReward          213.125000
+TrainMaxReward           750.000000
+TrainMeanNovelty         2096.500000
+TrainMaxNovelty          7149.000000
+StepsSinceStart          2254077.000000
+StepsThisIter            14840.000000
+IterationTime            553.878590
+TimeSinceStart           1338.624928
+ParamNorm           80.138916
+StepNorm            7.057723
+Sigma               0.009998
+PSigmaNorm          20.701584
+------------------------------------
+------------------------------------
+Iteration                157.000000
+EvalMeanReward           287.500000
+EvalMaxReward            475.000000
+EvalMeanNovelty          902.399739
+EvalMaxNovelty           956.684309
+TrainMeanReward          211.250000
+TrainMaxReward           625.000000
+TrainMeanNovelty         3555.350000
+TrainMaxNovelty          9480.000000
+StepsSinceStart          2268316.000000
+StepsThisIter            14239.000000
+IterationTime            525.102678
+TimeSinceStart           1347.379162
+ParamNorm           80.193268
+StepNorm            2.963463
+Sigma               0.009998
+PSigmaNorm          20.743585
+------------------------------------
+------------------------------------
+Iteration                158.000000
+EvalMeanReward           237.500000
+EvalMaxReward            375.000000
+EvalMeanNovelty          1931.787302
+EvalMaxNovelty           2906.890296
+TrainMeanReward          190.625000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2594.050000
+TrainMaxNovelty          9257.000000
+StepsSinceStart          2282071.000000
+StepsThisIter            13755.000000
+IterationTime            460.357160
+TimeSinceStart           1355.054071
+ParamNorm           80.228790
+StepNorm            2.479033
+Sigma               0.009998
+PSigmaNorm          20.771441
+------------------------------------
+------------------------------------
+Iteration                159.000000
+EvalMeanReward           525.000000
+EvalMaxReward            525.000000
+EvalMeanNovelty          671.938206
+EvalMaxNovelty           671.940136
+TrainMeanReward          185.000000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2587.400000
+TrainMaxNovelty          7644.000000
+StepsSinceStart          2296246.000000
+StepsThisIter            14175.000000
+IterationTime            486.652242
+TimeSinceStart           1363.167312
+ParamNorm           80.302452
+StepNorm            3.465216
+Sigma               0.009998
+PSigmaNorm          20.826474
+------------------------------------
+------------------------------------
+Iteration                160.000000
+EvalMeanReward           237.500000
+EvalMaxReward            375.000000
+EvalMeanNovelty          538.338891
+EvalMaxNovelty           629.106838
+TrainMeanReward          190.625000
+TrainMaxReward           600.000000
+TrainMeanNovelty         3294.850000
+TrainMaxNovelty          9401.000000
+StepsSinceStart          2310227.000000
+StepsThisIter            13981.000000
+IterationTime            492.597130
+TimeSinceStart           1371.379821
+ParamNorm           80.436615
+StepNorm            4.642569
+Sigma               0.009998
+PSigmaNorm          20.926540
+------------------------------------
+------------------------------------
+Iteration                161.000000
+EvalMeanReward           175.000000
+EvalMaxReward            225.000000
+EvalMeanNovelty          1638.285281
+EvalMaxNovelty           2711.050583
+TrainMeanReward          229.375000
+TrainMaxReward           675.000000
+TrainMeanNovelty         2978.975000
+TrainMaxNovelty          9416.000000
+StepsSinceStart          2324555.000000
+StepsThisIter            14328.000000
+IterationTime            502.677194
+TimeSinceStart           1379.760068
+ParamNorm           80.467491
+StepNorm            2.176405
+Sigma               0.009998
+PSigmaNorm          20.948628
+------------------------------------
+------------------------------------
+Iteration                162.000000
+EvalMeanReward           237.500000
+EvalMaxReward            375.000000
+EvalMeanNovelty          1854.092011
+EvalMaxNovelty           3366.989220
+TrainMeanReward          217.500000
+TrainMaxReward           750.000000
+TrainMeanNovelty         2649.600000
+TrainMaxNovelty          9681.000000
+StepsSinceStart          2338009.000000
+StepsThisIter            13454.000000
+IterationTime            473.438415
+TimeSinceStart           1387.653268
+ParamNorm           80.515846
+StepNorm            2.692548
+Sigma               0.009998
+PSigmaNorm          20.982791
+------------------------------------
+------------------------------------
+Iteration                163.000000
+EvalMeanReward           237.500000
+EvalMaxReward            375.000000
+EvalMeanNovelty          352.239817
+EvalMaxNovelty           367.398088
+TrainMeanReward          278.750000
+TrainMaxReward           625.000000
+TrainMeanNovelty         2915.075000
+TrainMaxNovelty          8753.000000
+StepsSinceStart          2352889.000000
+StepsThisIter            14880.000000
+IterationTime            551.281612
+TimeSinceStart           1396.843387
+ParamNorm           80.599548
+StepNorm            3.699034
+Sigma               0.009998
+PSigmaNorm          21.047091
+------------------------------------
+------------------------------------
+Iteration                164.000000
+EvalMeanReward           75.000000
+EvalMaxReward            100.000000
+EvalMeanNovelty          1049.302800
+EvalMaxNovelty           1478.868257
+TrainMeanReward          181.875000
+TrainMaxReward           800.000000
+TrainMeanNovelty         2343.550000
+TrainMaxNovelty          7505.000000
+StepsSinceStart          2366416.000000
+StepsThisIter            13527.000000
+IterationTime            524.433444
+TimeSinceStart           1405.586214
+ParamNorm           80.640900
+StepNorm            2.614898
+Sigma               0.009997
+PSigmaNorm          21.077873
+------------------------------------
+------------------------------------
+Iteration                165.000000
+EvalMeanReward           50.000000
+EvalMaxReward            50.000000
+EvalMeanNovelty          2932.151185
+EvalMaxNovelty           2935.269070
+TrainMeanReward          208.125000
+TrainMaxReward           1100.000000
+TrainMeanNovelty         2459.500000
+TrainMaxNovelty          6038.000000
+StepsSinceStart          2380591.000000
+StepsThisIter            14175.000000
+IterationTime            507.566726
+TimeSinceStart           1414.047820
+ParamNorm           80.856583
+StepNorm            5.982660
+Sigma               0.009997
+PSigmaNorm          21.237324
+------------------------------------
+------------------------------------
+Iteration                166.000000
+EvalMeanReward           75.000000
+EvalMaxReward            100.000000
+EvalMeanNovelty          976.611167
+EvalMaxNovelty           1480.346983
+TrainMeanReward          268.750000
+TrainMaxReward           675.000000
+TrainMeanNovelty         3126.450000
+TrainMaxNovelty          9984.000000
+StepsSinceStart          2394713.000000
+StepsThisIter            14122.000000
+IterationTime            481.500661
+TimeSinceStart           1422.075051
+ParamNorm           80.962532
+StepNorm            4.238608
+Sigma               0.009997
+PSigmaNorm          21.318204
+------------------------------------
+------------------------------------
+Iteration                167.000000
+EvalMeanReward           100.000000
+EvalMaxReward            100.000000
+EvalMeanNovelty          619.737343
+EvalMaxNovelty           619.737343
+TrainMeanReward          152.500000
+TrainMaxReward           625.000000
+TrainMeanNovelty         3364.450000
+TrainMaxNovelty          9861.000000
+StepsSinceStart          2408474.000000
+StepsThisIter            13761.000000
+IterationTime            502.867018
+TimeSinceStart           1430.458643
+ParamNorm           81.037491
+StepNorm            3.359423
+Sigma               0.009997
+PSigmaNorm          21.369649
+------------------------------------
+------------------------------------
+Iteration                168.000000
+EvalMeanReward           100.000000
+EvalMaxReward            100.000000
+EvalMeanNovelty          619.737342
+EvalMaxNovelty           619.737342
+TrainMeanReward          212.500000
+TrainMaxReward           625.000000
+TrainMeanNovelty         3085.425000
+TrainMaxNovelty          10244.000000
+StepsSinceStart          2422837.000000
+StepsThisIter            14363.000000
+IterationTime            552.320630
+TimeSinceStart           1439.666538
+ParamNorm           81.110542
+StepNorm            3.418765
+Sigma               0.009997
+PSigmaNorm          21.424199
+------------------------------------
