@@ -115,9 +115,20 @@ To further improve our optimization we can weight the novelty and reward values 
 Starting with only optimization for reward ($\hat{w}=1$), we can track the policy's performance, if we improve our game we want to optimize for reward so in every iteration we increase the weight. If on the other hand we stop improving, it means we got into a plateau, we will start decreasing the weight so that we will optimize for novelty.
 
 \subsection{Population Reproduction}
-The CanincalES algorithm, as described, takes a meta population of size $mu$ of best performing offspring and uses the weighted sum of their mutation as the learned parameter, updating the base policy with that weighted mutation. This may seem like a good idea, take the best of the population and reproduce them. But, if we take natural evolution as our guide for building our algorithm, then we know that the fact a beneficial mutation occurred is not directly correlated the offspring's ability to reproduce. Rather it simply increases the odes for the offspring reproduction and keep the mutation in the population. Therefore, instead of taking the best set of offspring we give each offspring a probability score based on it's performance and sample the set from the population according to the said probability.
+The CanincalES algorithm, as described, takes a meta population of size $\mu$ of best performing offspring and uses the weighted sum of their mutation as the learned parameter, updating the base policy with that weighted mutation. This may seem like a good idea: take the best of the population and reproduce them. But, if we take natural evolution as our guide for building our algorithm, then we know that the fact a beneficial mutation occurred is not directly correlated the offspring's ability to reproduce. Rather it simply increases the odes for the offspring reproduction and keep the mutation in the population. Therefore, instead of taking the best set of offspring we give each offspring a probability score based on it's performance and sample the set from the population according to the said probability.
 
-We would like to use the performance score $\hat{s}$ we defined above to compute the probability \todo{explain about normalization and sampling}
+We would like to use the performance score $\hat{s}$ we defined above to compute the probability, but depending on the domain the novelty and reward values may be at different scales. So we normalize these values. Given a population of size $\lambda$ the normalized novelty $\hat{N}$ and normalized reward $\hat{F}$ are defined as follows:
+
+\begin{align*}
+&\hat{N}(\theta,A)=\frac{N(\theta,A)}{\max_{\theta_i\in\{\theta_1,\theta_2,\dots,\theta_\lambda\}}N(\theta_i,A)}\\
+&\hat{F}(\theta)=\frac{F(\theta)}{\max_{\theta_i\in\{\theta_1,\theta_2,\dots,\theta_\lambda\}}F(\theta_i)}
+\end{align*}
+
+Lastly, we define a probability value for each offspring. An offspring probability is defined as:
+
+\begin{equation*}
+P(\theta)=\frac{\hat{N}(\theta,A)+\hat{F}(\theta)}{\sum_{i=1}^{\lambda}\hat{N}(\theta_i,A)+\hat{F}(\theta_i)}
+\end{equation*}
 
 \subsection{Implementation}
 \todo{pca and knn distance then the final algorithm}
