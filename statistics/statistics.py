@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 stat_row_indexes = {
     'steps': 0,
@@ -25,7 +26,7 @@ def create_plots_from_file(path, output_dir):
 
 
 def create_plot(x, x_label, y, y_label, file_name):
-    plt.plot(x, y)
+    plt.plot(x, y, 'gray')
     plt.ylabel(y_label)
     plt.xlabel(x_label)
     min_y = int(min(y))
@@ -43,16 +44,29 @@ def create_plot_from_two_files(p1, p2, output_dir):
             for v1, a1, v2, a2 in zip(l1.split(','), r1, l2.split(','), r2):
                 a1.append(float(v1.strip()))
                 a2.append(float(v2.strip()))
-    create_two_legends_plot(r1[stat_row_indexes.get('mean_reward')], r1[stat_row_indexes.get('time')],
-                            r2[stat_row_indexes.get('mean_reward')], r2[stat_row_indexes.get('time')])
+    create_two_legends_plot(r1[stat_row_indexes.get('mean_reward')], [i for i in range(len(r1[stat_row_indexes.get('mean_reward')]))],
+                            r2[stat_row_indexes.get('mean_reward')], [i for i in range(len(r1[stat_row_indexes.get('mean_reward')]))])
 
 
 def create_two_legends_plot(x1, y1, x2, y2):
+    n = 6
+    cut = 20
     fig, ax = plt.subplots()
-    ax.plot(x1, y1, 'k--', label='Model length')
-    ax.plot(x2, y2, 'k:', label='Data length')
+    ax.plot(y1[:-n-cut], smooth_array(x1, n)[:-cut], 'black')
+    ax.plot(y1[:-n-cut], x1[:-n-cut], 'gray')
+    # ax.plot(y2[:-n-cut], smooth_array(x2, n)[:-cut], 'gray')
 
+    plt.xlabel('iterations')
+    plt.ylabel('score')
+    plt.legend(['OurES', 'CanonicalES'])
     plt.show()
+
+
+def smooth_array(arr, n):
+    new_arr = []
+    for i in range(len(arr) - n):
+        new_arr.append(np.mean(arr[i:i+n]))
+    return new_arr
 
 
 def make_stat(in_path, out_dir):
@@ -60,7 +74,7 @@ def make_stat(in_path, out_dir):
 
 
 if __name__ == '__main__':
-    origin_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/40/0.010000/1.000000/1.000000/origin/stat.txt'
-    novelty_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/40/0.010000/1.000000/1.000000/novelty/stat.txt'
+    origin_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/origin/stat.txt'
+    novelty_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/novelty/stat.txt'
     # create_plots_from_file(origin_stat_path, 'origin')
-    create_plot_from_two_files(origin_stat_path, novelty_stat_path, '')
+    create_plot_from_two_files(novelty_stat_path, origin_stat_path, '')
