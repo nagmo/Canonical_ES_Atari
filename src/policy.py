@@ -128,13 +128,15 @@ class Policy(object):
         ob = np.asarray(ob)
         t = 0
         rew_sum = 0
+        nov_sum = 0
+        j = 0
         for _ in range(self.max_episode_len):
+            j += 1
             ac = self.sess.run(self.action_op, feed_dict={self.input_placeholder: [ob], self.is_training: False})
             ob, rew, done, _ = self.env.step(np.argmax(ac))
             ob = np.asarray(ob)
             self.ns.add_observation(ob)
-            novelty = self.ns.get_novelty_score()
-            #todo: add nov sum
+            nov_sum += self.ns.get_novelty_score()
             rew_sum += rew
             t += 1
             if render:
@@ -142,7 +144,7 @@ class Policy(object):
             if done:
                 break
 
-        return rew_sum, t, novelty
+        return rew_sum, t, nov_sum / j
 
 
 # Wrapper for setting some parameters to 0 in specified layers.
