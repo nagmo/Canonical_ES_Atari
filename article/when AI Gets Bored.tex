@@ -16,7 +16,7 @@
 \setlength{\droptitle}{-5em}
 \setlength{\columnsep}{2em}
  
-\title{When AI Gets Bored}
+\title{Novel Ideas For ES}
 \author{Nevo Agmon 203116769, Yuval Shildan 205799307}
 \date{Winter 2019}
 
@@ -30,7 +30,7 @@ In the field of AI Reinforcement Learning (RL) is used to solve problems requiri
 
 Evolution Strategies (ES) is a family of algorithms based on the idea of natural evolution that have recently shown to be comparable to the state of the art in Q - Learning on a challenging set of problems. ES have the benefit of being highly parallelizable, thus reducing training duration from several days to a matter of hours.
 
-\todo{need to change this, we dont use RL} ES and RL have different learning characteristics, resulting in different strengths and weaknesses. In this paper we describe a very simple canonical ES algorithm, and try to improve it's performance with ideas from more traditional RL in order to show that the combination of both could possibly advance upon the current state of the art.
+ES and RL have different learning characteristics, resulting in different strengths and weaknesses. In this paper we describe a very simple canonical ES algorithm, and try to improve it's performance with ideas from more traditional RL in order to show that the combination of both could possibly advance upon the current state of the art.
 
 
 \section{Problem Description}
@@ -211,8 +211,28 @@ Our final algorithm can be sen in Algorithm \ref{alg:our}.
 \end{algorithmic}
 \end{algorithm}
 
-\section{Results}
+\section{Experiments}
+\subsection{Setup}
+To run experiments we used 21 cores each with 2 threads, for a total of 40 workers (meaning that $\lambda=40$) with the remaining core being a "management" core. Although our server had 64 cores we found that the Slurm (the server management environment) didn't allow us to run training with more then this. Each training session lasted 24 hours, the reason for this long training (as compared to 5 hours of training in Chrabaszcz et al.'s paper) is that we had significantly less resources thus longer training session help us some what mitigate this problem. In Chrabaszcz et al. the authors used a meta population of size 50 which is 12.5\% of the population, for us this means a meta population of size 5 ($\mu=5$). Due to the differences in computation power we described our implementation can not be fully compared to Chrabaszcz et al.'s, the number of mutations per each evolution step and the size of the meta population have a great impact on the results.
+\subsection{Results}
+We used Qbert as our game of choice for testing our work. As expected the training process in very noisy due to the impact of a small change in an environment that depends on multiple variables such as Atari games. A visualization of this noise can be seen in Figure \ref{fig:noise_comp}, therefore we decided to smooth the results using average of 6 consecutive runs as can also be seen in this figure.
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{QbertNoiseComparison.png}
+  \caption{Smoothing of training results.}
+  \label{fig:noise_comp}
+\end{figure}
+
+During our testing we saw that in fact the introduction of novelty and weighting the optimization according to the results has a positive impact on the performance of the model, as can be seen in Figure \ref{fig:comp_res}. In this figure we can see the at around 60 iterations the model gets into a local optima and this is where our algorithm differs form the CanonicalES algorithm, In our algorithm the weight of the novelty score gets higher and therefore we can observe an improvement at around iteration 80 that ultimately leads to a far better result then the CanonicalES algorithm which stays relatively in the same score.
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{QbertComparison.png}
+  \caption{Comparison of the same run with OurES and CanonicalES algorithms.}
+  \label{fig:comp_res}
+\end{figure}
+
 \section{Conclusion}
+To conclude it seems like the method we described to reduce the tendency of ES algorithms to plateau can indeed improve existing methods and lead to better results. Although we had limited resource to use we still found that the method improves the result. We believe that applying this method using enough resources could lead to far better results. We also suggest to further investigate the use of Auto-Encoders or Deep Compression to compute the novelty score which can be used to record far more behavior representations and thus improve the application of the novelty concept to this problem.
 
 \bibliography{when_AI_Gets_Bored} 
 \bibliographystyle{ieeetr}
