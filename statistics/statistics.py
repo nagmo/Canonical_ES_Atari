@@ -53,8 +53,8 @@ def create_two_legends_plot(x1, y1, x2, y2):
     cut = 20
     fig, ax = plt.subplots()
     ax.plot(y1[:-n-cut], smooth_array(x1, n)[:-cut], 'black')
-    ax.plot(y1[:-n-cut], x1[:-n-cut], 'gray')
-    # ax.plot(y2[:-n-cut], smooth_array(x2, n)[:-cut], 'gray')
+    # ax.plot(y1[:-n-cut], x1[:-n-cut], 'gray')
+    ax.plot(y2[:-n-cut], smooth_array(x2, n)[:-cut], 'gray')
 
     plt.xlabel('iterations')
     plt.ylabel('score')
