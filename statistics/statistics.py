@@ -49,8 +49,8 @@ def create_plot_from_two_files(p1, p2, output_dir):
 
 
 def create_two_legends_plot(x1, y1, x2, y2):
-    n = 6
-    cut = 35
+    n = 8
+    cut = 9
     fig, ax = plt.subplots()
     # ax.plot(y1[:-n-cut], x1[:-n-cut], 'gray')
     ax.plot(y1[:-n-cut], smooth_array(x1, n)[:-cut], 'black')
@@ -73,8 +73,18 @@ def make_stat(in_path, out_dir):
     create_plots_from_file(in_path, out_dir)
 
 
+def make_average_stat(p1, p2, p3, output_path):
+    with open(p1, 'r') as f1, open(p2, 'r') as f2, open(p3, 'r') as f3, open(output_path, 'w') as o:
+        for l1, l2, l3 in zip(f1, f2, f3):
+            o.writelines(str([(float(v1.strip()) + float(v2.strip()) + float(v3.strip()))/3 for v1, v2, v3 in zip(l1.split(","), l2.split(","), l3.split(","))])[1:-1])
+            o.write('\n')
+
+
 if __name__ == '__main__':
-    origin_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/origin1/stat.txt'
-    novelty_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/novelty2/stat.txt'
+    origin_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/origin/stat.txt'
+    novelty_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/novelty/stat.txt'
     # create_plots_from_file(origin_stat_path, 'origin')
-    create_plot_from_two_files(novelty_stat_path, origin_stat_path, '')
+    origin_avg_stat = './origin.avg.txt'
+    novelty_avg_stat = './novelty.avg.txt'
+    create_plot_from_two_files(novelty_avg_stat, origin_avg_stat, '')
+    # make_average_stat('../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/origin/stat.txt', '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/origin1/stat.txt', '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/origin2/stat.txt', './origin.avg.txt')
