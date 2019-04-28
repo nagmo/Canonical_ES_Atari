@@ -44,21 +44,21 @@ def create_plot_from_two_files(p1, p2, output_dir):
             for v1, a1, v2, a2 in zip(l1.split(','), r1, l2.split(','), r2):
                 a1.append(float(v1.strip()))
                 a2.append(float(v2.strip()))
-    create_two_legends_plot(r1[stat_row_indexes.get('mean_reward')], [i for i in range(len(r1[stat_row_indexes.get('mean_reward')]))],
-                            r2[stat_row_indexes.get('mean_reward')], [i for i in range(len(r1[stat_row_indexes.get('mean_reward')]))])
+    create_two_legends_plot(r1[stat_row_indexes.get('max_reward')], [i for i in range(len(r1[stat_row_indexes.get('mean_reward')]))],
+                            r2[stat_row_indexes.get('max_reward')], [i for i in range(len(r1[stat_row_indexes.get('mean_reward')]))])
 
 
 def create_two_legends_plot(x1, y1, x2, y2):
     n = 6
-    cut = 20
+    cut = 35
     fig, ax = plt.subplots()
-    ax.plot(y1[:-n-cut], x1[:-n-cut], 'gray')
+    # ax.plot(y1[:-n-cut], x1[:-n-cut], 'gray')
     ax.plot(y1[:-n-cut], smooth_array(x1, n)[:-cut], 'black')
-    # ax.plot(y2[:-n-cut], smooth_array(x2, n)[:-cut], 'gray')
+    ax.plot(y2[:-n-cut], smooth_array(x2, n)[:-cut], 'gray')
 
     plt.xlabel('iterations')
     plt.ylabel('score')
-    plt.legend(['Original', 'Smoothed'])
+    plt.legend(['OurES', 'CanonicalES'])
     plt.show()
 
 
@@ -74,7 +74,7 @@ def make_stat(in_path, out_dir):
 
 
 if __name__ == '__main__':
-    origin_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/origin/stat.txt'
-    novelty_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/novelty/stat.txt'
+    origin_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/origin1/stat.txt'
+    novelty_stat_path = '../logs_mpi/Qbert/Baseline/Nature/40/5/0.010000    /1.000000/1.000000/novelty2/stat.txt'
     # create_plots_from_file(origin_stat_path, 'origin')
     create_plot_from_two_files(novelty_stat_path, origin_stat_path, '')
