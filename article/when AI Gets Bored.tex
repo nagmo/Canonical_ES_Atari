@@ -30,7 +30,7 @@ In the field of AI Reinforcement Learning (RL) is used to solve problems requiri
 
 Evolution Strategies (ES) is a family of algorithms based on the idea of natural evolution that have recently shown to be comparable to the state of the art in Q - Learning on a challenging set of problems. ES have the benefit of being highly parallelizable, thus reducing training duration from several days to a matter of hours.
 
-ES and RL have different learning characteristics, resulting in different strengths and weaknesses. In this paper we describe a very simple canonical ES algorithm, and try to improve it's performance with ideas from more traditional RL in order to show that the combination of both could possibly advance upon the current state of the art.
+ES and RL have different learning characteristics, resulting in different strengths and weaknesses. In this paper we describe a very simple canonical ES algorithm, and try to improve its performance with ideas from more traditional RL in order to show that the combination of both could possibly advance the current state of the art.
 
 
 \section{Problem Description}
@@ -68,7 +68,7 @@ This algorithm is relatively simple, and as mentioned before, is loosely based o
 \end{algorithm}
 
 \subsection{Main Objective}
-This approach yielded good results in a short period of training, as shown by Chrabaszcz et al. but has few drawbacks, as shown in figure \ref{fig:canonical_results}. The main drawbacks are that the policy tends to reach some local optima and plateaus. This leads to the main objective of this paper, define a set of improvements to encourage the policy to seek for a better solution and reduce the tendency to plateau. To accomplish this objective we look at the work done by Conti et al. \cite{improveES} in the paper \emph{Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents}. In their paper Conti et al. try to optimize an ES algorithm (related but not the same as Chrabaszcz et al.'s canonical one) for seeking novel decisions to address the very same problem.
+This approach yielded good results in a short period of training, as shown by Chrabaszcz et al. but has few drawbacks, as shown in figure \ref{fig:canonical_results}. The main drawbacks are that the policy tends to reach some local optima and plateaus. This leads to the main objective of this paper, to define a set of improvements to encourage the policy to seek a better solution and reduce the tendency to plateau. To accomplish this objective we look at the work done by Conti et al. \cite{improveES} in the paper \emph{Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents}. In their paper Conti et al. try to optimize an ES algorithm (related but not the same as Chrabaszcz et al.'s canonical one) for seeking novel decisions to address the very same problem.
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{canonical_train_res.png}
@@ -77,7 +77,7 @@ This approach yielded good results in a short period of training, as shown by Ch
 \end{figure}
 
 \section{Method Description}
-To define a set of improvements to try and rectify the described problem we first had to make an assumption as to what causes this behavior. Our assumption was that because the algorithm optimizes for immediate reward, it can miss on the opportunity for better performance and greater overall reward. Meaning, we want to optimize for overall game performance, preferably averaging performance over multiple runs. Unfortunately, since a single game is comprised of a large number of decisions, if we track the end game result and optimize accordingly we could not tell what is the state and action relations that improve performance and therefore optimize poorly.
+To define a set of improvements to try and rectify the described problem we first had to make an assumption as to what causes this behavior. Our assumption was that because the algorithm optimizes for immediate reward, it can miss out on the opportunity for better performance and greater overall reward. Meaning, we want to optimize for overall game performance, preferably averaging performance over multiple runs. Unfortunately, since a single game is comprised of a large number of decisions, if we track the end game result and optimize accordingly we could not tell what is the state and action relations that improve performance and therefore optimize poorly.
 
 Therefore, we decided to focus on two aspects of the algorithm for improvement:
 \begin{enumerate}
@@ -223,16 +223,16 @@ We used Qbert as our game of choice for testing our work. As expected the traini
   \label{fig:noise_comp}
 \end{figure}
 
-During our testing we saw that in fact the introduction of novelty and weighting the optimization according to the results has a positive impact on the performance of the model, as can be seen in Figure \ref{fig:comp_res}. In this figure we can see the at around 60 iterations the model gets into a local optima and this is where our algorithm differs form the CanonicalES algorithm, In our algorithm the weight of the novelty score gets higher and therefore we can observe an improvement at around iteration 80 that ultimately leads to a far better result then the CanonicalES algorithm which stays relatively in the same score.
+During our testing we saw that in fact the introduction of novelty and weighting the optimization according to the results has a positive impact on the performance of the model, as can be seen in Figure \ref{fig:comp_res}. In this figure we can see that our model is superior to the CanonicalES model even under the constrains of minimal compute resources. 
 
 \begin{figure}[h!]
-  \includegraphics[width=\linewidth]{QbertComparison.png}
-  \caption{Comparison of the same run with OurES and CanonicalES algorithms.}
+  \includegraphics[width=\linewidth]{averageComparison.png}
+  \caption{Average comparison of three runs with OurES and CanonicalES algorithms.}
   \label{fig:comp_res}
 \end{figure}
 
 \section{Conclusion}
-To conclude it seems like the method we described to reduce the tendency of ES algorithms to plateau can indeed improve existing methods and lead to better results. Although we had limited resource to use we still found that the method improves the result. We believe that applying this method using enough resources could lead to far better results. We also suggest to further investigate the use of Auto-Encoders or Deep Compression to compute the novelty score which can be used to record far more behavior representations and thus improve the application of the novelty concept to this problem.
+To conclude it seems like the method we described to reduce the tendency of ES algorithms to plateau can indeed improve existing methods and lead to better results. Although we had limited resource to use we still found that our method improves the results. We believe that applying this method using enough resources could lead to far better results. We also suggest to further investigate the use of Auto-Encoders or Deep Compression to compute the novelty score which can be used to record far more behavior representations and thus improve the application of the novelty concept to this problem.
 
 \bibliography{when_AI_Gets_Bored} 
 \bibliographystyle{ieeetr}
