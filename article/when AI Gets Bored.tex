@@ -217,22 +217,22 @@ To run experiments we used 21 cores each with 2 threads, for a total of 40 worke
 \subsection{Results}
 We used Qbert as our game of choice for testing our work. As expected the training process in very noisy due to the impact of a small change in an environment that depends on multiple variables such as Atari games. A visualization of this noise can be seen in Figure \ref{fig:noise_comp}, therefore we decided to smooth the results using average of 6 consecutive runs as can also be seen in this figure.
 
+During our testing we saw that in fact the introduction of novelty and weighting the optimization according to the results has a positive impact on the performance of the model, as can be seen in Figure \ref{fig:comp_res}. In this figure we can see that our model is superior to the CanonicalES model even under the constrains of minimal compute resources. 
+
+\section{Conclusion}
+To conclude it seems like the method we described to reduce the tendency of ES algorithms to plateau can indeed improve existing methods and lead to better results. Although we had limited resource to use we still found that our method improves the results. We believe that applying this method using enough resources could lead to far better results. We also suggest to further investigate the use of Auto-Encoders or Deep Compression to compute the novelty score which can be used to record far more behavior representations and thus improve the application of the novelty concept to this problem.
+
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{QbertNoiseComparison.png}
   \caption{Smoothing of training results.}
   \label{fig:noise_comp}
 \end{figure}
 
-During our testing we saw that in fact the introduction of novelty and weighting the optimization according to the results has a positive impact on the performance of the model, as can be seen in Figure \ref{fig:comp_res}. In this figure we can see that our model is superior to the CanonicalES model even under the constrains of minimal compute resources. 
-
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{averageComparison.png}
   \caption{Average comparison of three runs with OurES and CanonicalES algorithms.}
   \label{fig:comp_res}
 \end{figure}
-
-\section{Conclusion}
-To conclude it seems like the method we described to reduce the tendency of ES algorithms to plateau can indeed improve existing methods and lead to better results. Although we had limited resource to use we still found that our method improves the results. We believe that applying this method using enough resources could lead to far better results. We also suggest to further investigate the use of Auto-Encoders or Deep Compression to compute the novelty score which can be used to record far more behavior representations and thus improve the application of the novelty concept to this problem.
 
 \bibliography{when_AI_Gets_Bored} 
 \bibliographystyle{ieeetr}
